@@ -1,0 +1,8 @@
+.banner-card {
+  width: 400px;
+}
+
+.baner-card-image {
+  background-image: url('../../assets/img/banner/jefferson.jpg');
+  background-size: cover;
+}

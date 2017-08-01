@@ -1,0 +1,46 @@
+<md-toolbar color="white">
+  <span class="banner"><img src="../assets/logo_transparent.png" class="logo"></span>
+  <span>
+    <div class="logoholder">
+        <span>Channel IT Services, LLC</span>
+        <span class="trademark">Implementing The Future&trade;</span>
+    </div>
+  </span>
+  <span class="main-icon"></span>
+  <span class="main-icon"></span>
+  <span class="main-icon"></span>
+  <span class="main-icon"></span>
+  <span class="main-icon"></span>
+  <span class="main-icon"></span>
+  <span class="main-icon"></span>
+  <span class="main-icon"></span>
+  <span class="main-icon"></span>
+  <span class="main-icon">
+    <a md-button [mdMenuTriggerFor]="menu">Services</a>
+  </span>
+    <md-menu #menu="mdMenu">
+      <button md-menu-item>
+        <md-icon>search</md-icon>
+        <span>Enterprise Search</span>
+      </button>
+      <button md-menu-item>
+        <md-icon>cloud_queue</md-icon>
+        <span>Cloud Migration</span>
+      </button>
+      <button md-menu-item>
+        <md-icon>group_add</md-icon>
+        <span>Staff Augmentation</span>
+      </button>
+      <button md-menu-item>
+        <md-icon>group_work</md-icon>
+        <span>Microservices and IoT</span>
+      </button>
+    </md-menu>
+  <span class="main-icon"><a md-button routerLink="/customers">Customers</a></span>
+  <span class="main-icon"><a md-button routerLink="/aboutus">About Us</a></span>
+  <span class="main-toolbar-fill"></span>
+  <span class="main-icon"><i class="fa fa-linkedin"></i></span>
+  <span class="main-icon"><i class="fa fa-github"></i></span>
+  <span class="main-icon"><i class="fa fa-google-plus"></i></span>
+</md-toolbar>
+<app-banner></app-banner>

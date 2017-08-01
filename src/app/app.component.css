@@ -1,0 +1,37 @@
+
+.main-toolbar-fill{
+  flex: 1 1 auto;
+}
+.main-icon {
+  padding-right: 14px;
+}
+
+.logo {
+  height: 40px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.banner {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.logoholder {
+  display: table-cell;
+  text-align: left;
+  font-size: 20px;
+  line-height: 15px;
+  font-weight: bold;
+  font-family: Arial;
+  color: darkblue;
+}
+.logoholder > span {
+  display: block;
+}
+.trademark {
+  padding-top: 6px;
+  font-size: 15px;
+  font-weight:normal;
+  font-family: "Times New Roman";
+}
