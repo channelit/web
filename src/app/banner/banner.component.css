@@ -1,8 +1,6 @@
-.banner-card {
-  width: 400px;
+.app-banner {
+  background: url('../../assets/img/banner/istock/iStock-170619187.jpg');
 }
-
-.baner-card-image {
-  background-image: url('../../assets/img/banner/jefferson.jpg');
-  background-size: cover;
+.banner-card {
+  width: 300px;
 }

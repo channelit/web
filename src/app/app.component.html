@@ -1,4 +1,4 @@
-<md-toolbar color="white">
+<md-toolbar color="primary" [@toolbarAnimation]="state" class="toolbar-background-full">
   <span class="banner"><img src="../assets/logo_transparent.png" class="logo"></span>
   <span>
     <div class="logoholder">
@@ -6,15 +6,7 @@
         <span class="trademark">Implementing The Future&trade;</span>
     </div>
   </span>
-  <span class="main-icon"></span>
-  <span class="main-icon"></span>
-  <span class="main-icon"></span>
-  <span class="main-icon"></span>
-  <span class="main-icon"></span>
-  <span class="main-icon"></span>
-  <span class="main-icon"></span>
-  <span class="main-icon"></span>
-  <span class="main-icon"></span>
+  <span class="main-toolbar-fill"></span>
   <span class="main-icon">
     <a md-button [mdMenuTriggerFor]="menu">Services</a>
   </span>
@@ -43,4 +35,5 @@
   <span class="main-icon"><i class="fa fa-github"></i></span>
   <span class="main-icon"><i class="fa fa-google-plus"></i></span>
 </md-toolbar>
-<app-banner></app-banner>
+<div class="toolbar-placeholder-fix"></div>
+<app-services class="services-container"></app-services>

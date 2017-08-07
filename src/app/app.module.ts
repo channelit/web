@@ -6,11 +6,13 @@ import {MdMenuModule, MdGridListModule, MdToolbarModule, MdIconModule, MdButtonM
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BannerComponent
+    BannerComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
