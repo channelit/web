@@ -41,9 +41,6 @@
   height: 1000px;
   z-index: 2;
 }
-.toolbar-placeholder-fix {
-  height: 100px;
-}
 .services-container {
   position: inherit;
 }

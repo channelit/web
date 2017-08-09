@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, RouterState, RouterStateSnapshot} from '@angular/router';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdMenuModule, MdGridListModule, MdToolbarModule, MdIconModule, MdButtonModule, MdCardModule} from '@angular/material';
 
-import { RoutesRoutingModule } from './routes/routes-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
@@ -15,6 +15,7 @@ import { SearchComponent } from './services/search/search.component';
 import { SoftwareComponent } from './services/software/software.component';
 import { StaffComponent } from './services/staff/staff.component';
 import { CloudComponent } from './services/cloud/cloud.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CloudComponent } from './services/cloud/cloud.component';
     SearchComponent,
     SoftwareComponent,
     StaffComponent,
-    CloudComponent
+    CloudComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,9 @@ import { CloudComponent } from './services/cloud/cloud.component';
     MdToolbarModule,
     MdButtonModule,
     MdCardModule,
-    RoutesRoutingModule
+    RouterModule,
+    RouterState,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

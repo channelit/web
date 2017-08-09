@@ -1,6 +1,5 @@
 import {Component, HostListener, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {trigger, state, transition, animate, keyframes, style} from '@angular/animations';
-
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -37,7 +36,6 @@ export class AppComponent implements OnInit, OnChanges {
   dir: string = "down";
   posLast: number = 0;
 
-
   @HostListener('window:scroll')
   onScroll(e: Event) {
     this.animateToolbar();
@@ -48,14 +46,8 @@ export class AppComponent implements OnInit, OnChanges {
   ngOnInit(): void {
 
   }
-  tiles = [
-    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
-  ];
   animateToolbar() {
-    console.log(this.dir + '' + window.pageYOffset);
+    console.log();
     this.dir = (this.posLast > window.pageYOffset ? 'up': 'down');
     this.posLast = window.pageYOffset;
 
