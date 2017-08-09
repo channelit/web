@@ -1,7 +1,6 @@
 import {Component, HostListener, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {trigger, state, transition, animate, keyframes, style} from '@angular/animations';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -12,22 +11,22 @@ import {trigger, state, transition, animate, keyframes, style} from '@angular/an
         height: '1000px',
       })),
       state('small', style({
-        height: '60px',
+        height: window.pageYOffset + 'px',
         background: '#347DCE',
         position: 'fixed'
       })),
-      transition('full => small', animate('300ms')),
+      transition('full <=> small', animate('300ms')),
     ]),
     trigger('logoAnimation', [
       state('full', style({
         height: '1000px',
       })),
       state('small', style({
-        height: '60px',
+        height: window.pageYOffset + 'px',
         background: '#347DCE',
         position: 'fixed'
       })),
-      transition('full => small', animate('300ms')),
+      transition('full <=> small', animate('0.5s')),
     ])
   ]
 })
@@ -35,6 +34,9 @@ export class AppComponent implements OnInit, OnChanges {
 
   state: string = 'full';
   ctr: number = 0;
+  dir: string = "down";
+  posLast: number = 0;
+
 
   @HostListener('window:scroll')
   onScroll(e: Event) {
@@ -44,6 +46,7 @@ export class AppComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
   }
   ngOnInit(): void {
+
   }
   tiles = [
     {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
@@ -51,21 +54,21 @@ export class AppComponent implements OnInit, OnChanges {
     {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
     {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
   ];
-
   animateToolbar() {
-    console.log(window.pageYOffset);
-    if (window.pageYOffset === 0) {
-      this.ctr ++;
-      if (this.ctr > 2 ) {
-        this.state = 'full'
-        this.ctr = 0;
-      }
-    } else {
+    console.log(this.dir + '' + window.pageYOffset);
+    this.dir = (this.posLast > window.pageYOffset ? 'up': 'down');
+    this.posLast = window.pageYOffset;
+
+    if (this.dir === 'down' && window.pageYOffset >= 20) {
       if (this.state === 'full') {
-        this.state = 'small'
+        this.state = 'small';
+      }
+    }
+    if (this.dir === 'up' && window.pageYOffset==0) {
+      if (this.state === 'small') {
+        this.state = 'full'
       }
     }
   }
-
 
 }
