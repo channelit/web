@@ -39,7 +39,6 @@ import { HomeComponent } from './home/home.component';
     MdButtonModule,
     MdCardModule,
     RouterModule,
-    RouterState,
     AppRoutingModule
   ],
   providers: [],
