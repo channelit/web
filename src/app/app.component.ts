@@ -8,9 +8,10 @@ import {trigger, state, transition, animate, keyframes, style} from '@angular/an
     trigger('toolbarAnimation', [
       state('full', style({
         height: '1000px',
+        position: 'fixed'
       })),
       state('small', style({
-        height: window.pageYOffset + 'px',
+        height:  '60px',
         background: '#347DCE',
         position: 'fixed'
       })),
