@@ -6,3 +6,5 @@ ng g component services/software --prefix=app
 ng g component services/staff --prefix=app
 ng g component services/cloud
 ng g component services/home
+ng g component home/banner
+npm update -D && npm update -S

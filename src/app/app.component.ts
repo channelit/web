@@ -7,7 +7,7 @@ import {trigger, state, transition, animate, keyframes, style} from '@angular/an
   animations: [
     trigger('toolbarAnimation', [
       state('full', style({
-        height: '1000px',
+        height: '400px',
         position: 'fixed'
       })),
       state('small', style({
@@ -15,7 +15,7 @@ import {trigger, state, transition, animate, keyframes, style} from '@angular/an
         background: '#347DCE',
         position: 'fixed'
       })),
-      transition('full <=> small', animate('300ms')),
+      transition('full <=> small', animate('1ms')),
     ]),
     trigger('logoAnimation', [
       state('full', style({

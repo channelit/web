@@ -8,7 +8,7 @@ import {MdMenuModule, MdGridListModule, MdToolbarModule, MdIconModule, MdButtonM
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { BannerComponent } from './banner/banner.component';
+import { BannerComponent } from './home/banner/banner.component';
 import { ServicesComponent } from './services/services.component';
 import { ClientsComponent } from './clients/clients.component';
 import { SearchComponent } from './services/search/search.component';
@@ -27,7 +27,7 @@ import { HomeComponent } from './home/home.component';
     SoftwareComponent,
     StaffComponent,
     CloudComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

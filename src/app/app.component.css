@@ -13,15 +13,16 @@
 }
 
 .banner {
-  padding-top: 8px;
+  padding-top: 10px;
   padding-right: 10px;
 }
 
 .logoholder {
   display: table-cell;
   text-align: left;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 15px;
+  font-weight: bold;
   color: aliceblue;
 }
 .logoholder > span {
@@ -34,10 +35,8 @@
   color: #eeeeee;
 }
 .toolbar-background-full {
-  /*background-color: transparent;*/
-  background: url('../assets/img/banner/istock/iStock-170619187.jpg');
-  background-size: 100% 100%;
-  height: 1000px;
+  background-color: transparent;
+  height: 400px;
   z-index: 2;
 }
 .services-container {

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { BannerComponent } from './banner/banner.component';
+import { BannerComponent } from './home/banner/banner.component';
 import { ServicesComponent } from './services/services.component';
 import { ClientsComponent } from './clients/clients.component';
 import { SearchComponent } from './services/search/search.component';
