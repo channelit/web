@@ -8,3 +8,5 @@ ng g component services/cloud
 ng g component services/home
 ng g component home/banner
 npm update -D && npm update -S
+
+npm install express --save
