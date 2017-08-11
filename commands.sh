@@ -10,3 +10,5 @@ ng g component home/banner
 npm update -D && npm update -S
 
 npm install express --save
+
+npm install material-design-icons --save
