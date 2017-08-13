@@ -7,29 +7,20 @@
     </div>
   </span>
   <span class="main-toolbar-fill"></span>
-  <span class="main-icon">
-    <a md-button [mdMenuTriggerFor]="menu"><h1>Services</h1></a>
-  </span>
-    <md-menu #menu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
-      <button md-menu-item>
-        <md-icon>search</md-icon>
-        <span>Enterprise Search</span>
-      </button>
-      <button md-menu-item>
-        <md-icon>cloud_queue</md-icon>
-        <span>Cloud Migration</span>
-      </button>
-      <button md-menu-item>
-        <md-icon>group_add</md-icon>
-        <span>Staff Augmentation</span>
-      </button>
-      <button md-menu-item>
-        <md-icon>group_work</md-icon>
-        <span>Microservices and IoT</span>
+  <span *ngFor="let item of menuItems; let mindex = index">
+    <a md-button *ngIf="!item.items" routerLink="{{item.url}}">
+      <h1>{{item.title}}</h1>
+    </a>
+    <a md-button *ngIf="item.items" [routerLink]="item.url" [mdMenuTriggerFor]="innerMenu">
+      <h1>{{item.title}}</h1>
+    </a>
+    <md-menu #innerMenu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
+      <button md-menu-item *ngFor="let menuItem of item.items">
+        <md-icon>{{menuItem.icon}}</md-icon>
+        <span>{{menuItem.title}}</span>
       </button>
     </md-menu>
-  <span class="main-icon"><a md-button routerLink="/clients"><h1>Clients</h1></a></span>
-  <span class="main-icon"><a md-button routerLink="/aboutus"><h1>About Us</h1></a></span>
+  </span>
   <span class="main-toolbar-fill"></span>
   <span class="main-icon"><i class="fa fa-linkedin"></i></span>
   <span class="main-icon"><i class="fa fa-github"></i></span>

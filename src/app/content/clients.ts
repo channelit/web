@@ -29,7 +29,7 @@ export const Clients = [
   },
   {
     'name' : 'SRA',
-    'logo' : '../../assets/img/clients/sra.jpg'
+    'logo' : '../../assets/img/clients/sra.gif'
   },
   {
     'name' : 'TechMahindra',

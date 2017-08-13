@@ -1,5 +1,8 @@
 import {Component, HostListener, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {trigger, state, transition, animate, keyframes, style} from '@angular/animations';
+
+import {MenuItems} from "./content/menu";
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -8,14 +11,15 @@ import {trigger, state, transition, animate, keyframes, style} from '@angular/an
     trigger('toolbarAnimation', [
       state('full', style({
         height: '400px',
-        position: 'fixed'
+        position: 'fixed',
+        paddingTop: '100px'
       })),
       state('small', style({
         height:  '60px',
         background: '#347DCE',
         position: 'fixed'
       })),
-      transition('full <=> small', animate('1ms')),
+      transition('full <=> small', animate('300ms ease')),
     ]),
     trigger('logoAnimation', [
       state('full', style({
@@ -31,7 +35,7 @@ import {trigger, state, transition, animate, keyframes, style} from '@angular/an
   ]
 })
 export class AppComponent implements OnInit, OnChanges {
-
+  menuItems = MenuItems;
   state: string = 'full';
   ctr: number = 0;
   dir: string = "down";
