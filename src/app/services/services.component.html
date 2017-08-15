@@ -1,5 +1,5 @@
-<md-grid-list cols="3">
-  <md-grid-tile colspan="3">
-    <app-search></app-search>
+<md-grid-list cols="3" rowHeight="2400px">
+  <md-grid-tile *ngFor="let service of searchServices" [colspan]="service.cols" [rowspan]="service.rows">
+    <app-search [content]="service.content"></app-search>
   </md-grid-tile>
 </md-grid-list>

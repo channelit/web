@@ -16,6 +16,7 @@ import { SoftwareComponent } from './services/software/software.component';
 import { StaffComponent } from './services/staff/staff.component';
 import { CloudComponent } from './services/cloud/cloud.component';
 import { HomeComponent } from './home/home.component';
+import { ServiceCardDirective } from './services/service-card.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HomeComponent } from './home/home.component';
     StaffComponent,
     CloudComponent,
     HomeComponent,
+    ServiceCardDirective,
   ],
   imports: [
     BrowserModule,
