@@ -10,27 +10,12 @@ import {MenuItems} from "./content/menu";
   animations: [
     trigger('toolbarAnimation', [
       state('full', style({
-        height: '400px',
-        position: 'fixed',
-        paddingTop: '100px'
+        background: 'transparent'
       })),
       state('small', style({
-        height:  '60px',
-        background: '#347DCE',
-        position: 'fixed'
+        background: '#347DCE'
       })),
-      transition('full <=> small', animate('300ms ease')),
-    ]),
-    trigger('logoAnimation', [
-      state('full', style({
-        height: '1000px',
-      })),
-      state('small', style({
-        height: window.pageYOffset + 'px',
-        background: '#347DCE',
-        position: 'fixed'
-      })),
-      transition('full <=> small', animate('0.5s')),
+      transition('full <=> small', animate('1ms')),
     ])
   ]
 })
@@ -59,11 +44,13 @@ export class AppComponent implements OnInit, OnChanges {
     if (this.dir === 'down' && window.pageYOffset >= 20) {
       if (this.state === 'full') {
         this.state = 'small';
+        console.log("making small")
       }
     }
     if (this.dir === 'up' && window.pageYOffset==0) {
       if (this.state === 'small') {
-        this.state = 'full'
+        this.state = 'full';
+        console.log("making full")
       }
     }
   }

@@ -1,7 +1,7 @@
-<md-toolbar color="primary" [@toolbarAnimation]="state" class="toolbar-background-full">
-  <span class="banner"><img src="../assets/logo_transparent.png" class="logo"></span>
+<md-toolbar color="primary" [@toolbarAnimation]="state" class="main-toolbar">
+  <span class="toolbar-logo-holder"><img src="../assets/logo_transparent.png" class="toolbar-logo"></span>
   <span>
-    <div class="logoholder">
+    <div routerLink="home" class="company-name-holder">
         <span>Channel IT Services, LLC</span>
         <span class="trademark">Implementing The Future&trade;</span>
     </div>
@@ -9,10 +9,10 @@
   <span class="main-toolbar-fill"></span>
   <span *ngFor="let item of menuItems; let mindex = index">
     <a md-button *ngIf="!item.items" routerLink="{{item.url}}">
-      <h1>{{item.title}}</h1>
+      <h2>{{item.title}}</h2>
     </a>
     <a md-button *ngIf="item.items" [routerLink]="item.url" [mdMenuTriggerFor]="innerMenu">
-      <h1>{{item.title}}</h1>
+      <h2>{{item.title}}</h2>
     </a>
     <md-menu #innerMenu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
       <button md-menu-item *ngFor="let menuItem of item.items">
@@ -22,8 +22,8 @@
     </md-menu>
   </span>
   <span class="main-toolbar-fill"></span>
-  <span class="main-icon"><i class="fa fa-linkedin"></i></span>
-  <span class="main-icon"><i class="fa fa-github"></i></span>
-  <span class="main-icon"><i class="fa fa-google-plus"></i></span>
+  <span class="social-icon"><i class="fa fa-linkedin"></i></span>
+  <span class="social-icon"><i class="fa fa-github"></i></span>
+  <span class="social-icon"><i class="fa fa-google-plus"></i></span>
 </md-toolbar>
 <router-outlet></router-outlet>

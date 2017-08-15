@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, RouterState, RouterStateSnapshot} from '@angular/router';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdMenuModule, MdGridListModule, MdToolbarModule, MdIconModule, MdButtonModule, MdCardModule} from '@angular/material';
+import {MdMenuModule, MdGridListModule, MdToolbarModule, MdIconModule, MdButtonModule, MdCardModule, MdChipsModule} from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -36,6 +36,7 @@ import { HomeComponent } from './home/home.component';
     MdMenuModule,
     MdGridListModule,
     MdToolbarModule,
+    MdChipsModule,
     MdButtonModule,
     MdCardModule,
     RouterModule,

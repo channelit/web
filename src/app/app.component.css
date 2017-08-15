@@ -2,43 +2,45 @@
 .main-toolbar-fill{
   flex: 1 1 auto;
 }
-.main-icon {
+.social-icon {
   padding-right: 14px;
 }
 
-.logo {
+.toolbar-logo {
   height: 40px;
   padding: 4px;
   border-radius: 50%;
+  background-color: white;
 }
 
-.banner {
+.toolbar-logo-holder {
   padding-top: 10px;
   padding-right: 10px;
 }
 
-.logoholder {
+.company-name-holder {
   display: table-cell;
+  font-family: Helvetica;
   text-align: left;
   font-size: 20px;
   line-height: 15px;
-  font-weight: bold;
-  color: aliceblue;
+  color: white;
 }
-.logoholder > span {
+.company-name-holder > span {
   display: block;
 }
 .trademark {
-  padding-top: 6px;
+  padding-top: 8px;
+  font-family: "Arial";
   font-size: 15px;
   font-weight:normal;
   color: #eeeeee;
 }
-.toolbar-background-full {
-  background-color: transparent;
-  height: 400px;
+
+.main-toolbar {
+  height:  60px;
+  background: #347DCE;
+  opacity: 0.9;
+  position: fixed;
   z-index: 2;
-}
-.services-container {
-  position: inherit;
 }
