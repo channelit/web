@@ -17,6 +17,7 @@ import { StaffComponent } from './services/staff/staff.component';
 import { CloudComponent } from './services/cloud/cloud.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceCardDirective } from './services/service-card.directive';
+import { HtmlTagPipe } from './pipes/html-tag.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ServiceCardDirective } from './services/service-card.directive';
     CloudComponent,
     HomeComponent,
     ServiceCardDirective,
+    HtmlTagPipe
   ],
   imports: [
     BrowserModule,
