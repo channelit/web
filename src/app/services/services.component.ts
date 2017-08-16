@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {ServicesSearch} from "../content/services.search"
 
 @Component({
@@ -8,6 +8,9 @@ import {ServicesSearch} from "../content/services.search"
 })
 export class ServicesComponent implements OnInit {
   searchServices = ServicesSearch;
+
+  @Input() serviceTitle:string;
+
   constructor() { }
 
   ngOnInit() {

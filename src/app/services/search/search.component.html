@@ -1,13 +1,17 @@
-<md-card class="banner-card">
+<md-card class="mat-elevation-z4">
   <md-card-header>
-    <h1>{{content.title}}</h1>
+    <md-card-title>{{content.title}}</md-card-title>
+    <md-card-subtitle>{{content.subtitle}}</md-card-subtitle>
   </md-card-header>
   <md-card-content>
-    <h2>{{content.subtitle}}</h2>
-    <section class="mat-card-title" *ngFor="let body of content.body">{{body}}</section>
+    <section class="mat-card-content" *ngFor="let body of content.body">
+      <md-card>
+        <md-card-header>
+          <md-card-title [innerHTML]="body.title"></md-card-title>
+        </md-card-header>
+        <md-card-content [innerHTML]="body.content">
+        </md-card-content>
+      </md-card>
+    </section>
   </md-card-content>
-  <md-card-actions>
-    <button md-button>LIKE</button>
-    <button md-button>SHARE</button>
-  </md-card-actions>
 </md-card>
