@@ -1,8 +1,10 @@
-<div class="mat-typography">
-  <span>{{serviceTitle}}</span>
-  <div fxLayout="row" fxLayoutAlign="space-around center">
-    <div fxFlex  *ngFor="let service of searchServices">
-      <app-search [content]="service.content"></app-search>
+<div *ngIf="servicesContents.length > 0" >
+  <div class="mat-typography" *ngFor="let servicesContent of servicesContents">
+    <span>{{servicesContent.serviceTitle}}</span>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex  *ngFor="let service of servicesContent.serviceItems">
+        <app-service [content]="service.content"></app-service>
+      </div>
     </div>
   </div>
 </div>

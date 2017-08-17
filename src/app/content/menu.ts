@@ -19,7 +19,7 @@ export const MenuItems = [
   },
   {
     title: "Data Analytics",
-    url: "search",
+    url: "analytics",
     items: [
       {
         title: "Machine Learning"
@@ -34,7 +34,7 @@ export const MenuItems = [
   },
   {
     title: "Big Data & Cloud",
-    url: "bigdata",
+    url: "cloud",
     items: [
       {
         title: "BigData Expertise",
@@ -49,7 +49,7 @@ export const MenuItems = [
   },
   {
     title: "Staff Augmentation",
-    url: "staff",
+    url: "staffing",
   },
   {
     title: "Clients",

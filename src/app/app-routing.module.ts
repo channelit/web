@@ -1,12 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AnalyticsComponent} from "./services/analytics/analytics.component"
 import { AboutComponent } from "./about/about.component"
 import { ClientsComponent } from './clients/clients.component';
-import { SearchComponent } from './services/search/search.component';
-import { SoftwareComponent } from './services/software/software.component';
-import { StaffComponent } from './services/staff/staff.component';
-import { CloudComponent } from './services/cloud/cloud.component';
+import { ServicesComponent} from "./services/services.component";
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -16,23 +12,24 @@ const routes: Routes = [
   },
   {
     path: 'search',
-    component: SearchComponent
+    component: ServicesComponent,
+    data: { service: 'search'}
   },
   {
     path: 'analytics',
-    component: AnalyticsComponent
-  },
-  {
-    path: 'software',
-    component: SoftwareComponent
+    component: ServicesComponent,
+    data: { service: 'analytics'}
   },
   {
     path: 'cloud',
-    component: CloudComponent
+    component: ServicesComponent,
+    data: { service: 'cloud' }
+
   },
   {
-    path: 'staff',
-    component: StaffComponent
+    path: 'staffing',
+    component: ServicesComponent,
+    data: { service: 'staffing'}
   },
   {
     path: 'about',
@@ -40,7 +37,9 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    data: { service: 'home'}
+
   },
   {
     path: '',
