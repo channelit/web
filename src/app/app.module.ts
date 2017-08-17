@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, RouterState, RouterStateSnapshot} from '@angular/router';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdMenuModule, MdGridListModule, MdToolbarModule, MdIconModule, MdButtonModule, MdCardModule, MdChipsModule} from '@angular/material';
+import {MdMenuModule, MdToolbarModule, MdIconModule, MdButtonModule, MdCardModule, MdChipsModule} from '@angular/material';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +19,8 @@ import { CloudComponent } from './services/cloud/cloud.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceCardDirective } from './services/service-card.directive';
 import { HtmlTagPipe } from './pipes/html-tag.pipe';
+import { AboutComponent } from './about/about.component';
+import { AnalyticsComponent } from './services/analytics/analytics.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +34,16 @@ import { HtmlTagPipe } from './pipes/html-tag.pipe';
     CloudComponent,
     HomeComponent,
     ServiceCardDirective,
-    HtmlTagPipe
+    HtmlTagPipe,
+    AboutComponent,
+    AnalyticsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     MdIconModule,
     MdMenuModule,
-    MdGridListModule,
     MdToolbarModule,
     MdChipsModule,
     MdButtonModule,

@@ -1,8 +1,8 @@
 <div class="mat-typography">
-<div style="text-align: center"><h1>{{serviceTitle}}</h1></div>
-<md-grid-list cols="3">
-  <md-grid-tile *ngFor="let service of searchServices" [colspan]="service.cols" [rowspan]="service.rows">
-    <app-search [content]="service.content"></app-search>
-  </md-grid-tile>
-</md-grid-list>
+  <span>{{serviceTitle}}</span>
+  <div fxLayout="row" fxLayoutAlign="space-around center">
+    <div fxFlex  *ngFor="let service of searchServices">
+      <app-search [content]="service.content"></app-search>
+    </div>
+  </div>
 </div>

@@ -1,8 +1,13 @@
-<md-grid-list cols="3" gutterSize="5px" rowHeight="5:4">
-  <div class="mat-display-2" style="text-align: center">Our Clients</div>
-  <md-grid-tile *ngFor="let client of clients" class="client-logo">
-    <md-card>
-      <img md-card-xl-image src="{{client.logo}}">
-    </md-card>
-  </md-grid-tile>
-</md-grid-list>
+<md-toolbar color="none">
+  <span>Our Clients</span>
+</md-toolbar>
+<div fxLayoutWrap fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center" fxLayoutGap="10px" class="mat-typography">
+  <div fxFlex="grow" fxLayoutAlign="center"><hr class="mat-divider"></div>
+  <div fxFlex="25" fxLayoutAlign="center" *ngFor="let client of clients" class="client-logo">
+    <div style="height: 400px">
+      <md-card>
+        <img md-card-xl-image src="{{client.logo}}">
+      </md-card>
+    </div>
+  </div>
+</div>

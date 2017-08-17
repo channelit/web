@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
-import { BannerComponent } from './home/banner/banner.component';
-import { ServicesComponent } from './services/services.component';
+import { AnalyticsComponent} from "./services/analytics/analytics.component"
+import { AboutComponent } from "./about/about.component"
 import { ClientsComponent } from './clients/clients.component';
 import { SearchComponent } from './services/search/search.component';
 import { SoftwareComponent } from './services/software/software.component';
@@ -14,6 +13,30 @@ const routes: Routes = [
   {
     path: 'clients',
     component: ClientsComponent
+  },
+  {
+    path: 'search',
+    component: SearchComponent
+  },
+  {
+    path: 'analytics',
+    component: AnalyticsComponent
+  },
+  {
+    path: 'software',
+    component: SoftwareComponent
+  },
+  {
+    path: 'cloud',
+    component: CloudComponent
+  },
+  {
+    path: 'staff',
+    component: StaffComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: 'home',
