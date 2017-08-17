@@ -8,10 +8,10 @@
   </span>
   <span class="main-toolbar-fill"></span>
   <span *ngFor="let item of menuItems; let mindex = index">
-    <a md-button *ngIf="!item.items" routerLink="{{item.url}}">
+    <a md-button *ngIf="!item.items" routerLink="{{item.url}}" fragment="service">
       <h2>{{item.title}}</h2>
     </a>
-    <a md-button *ngIf="item.items" [routerLink]="item.url" [mdMenuTriggerFor]="innerMenu">
+    <a md-button *ngIf="item.items" [routerLink]="item.url" fragment="service" [mdMenuTriggerFor]="innerMenu">
       <h2>{{item.title}}</h2>
     </a>
     <md-menu #innerMenu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">

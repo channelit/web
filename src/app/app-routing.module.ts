@@ -13,7 +13,7 @@ const routes: Routes = [
   {
     path: 'search',
     component: ServicesComponent,
-    data: { service: 'search'}
+    data: { service: 'search'},
   },
   {
     path: 'analytics',

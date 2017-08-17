@@ -13,6 +13,13 @@ import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 export class ServicesComponent implements OnInit {
   servicesContents;
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.fragment.subscribe(f => {
+      const element = document.querySelector("#" + f);
+      if (element) {
+        element.scrollIntoView(element);
+        window.scrollBy(0, -64);
+      }
+    });
     this.servicesContents = [];
   }
 
