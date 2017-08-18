@@ -7,7 +7,7 @@
     </div>
   </span>
   <span class="main-toolbar-fill"></span>
-  <div fxShow fxHide.lt-lg="true">
+  <div fxShow fxHide.lt-lg>
     <span *ngFor="let item of menuItems; let mindex = index">
       <a md-button *ngIf="!item.items" routerLink="{{item.url}}" fragment="service">
         <h3>{{item.title}}</h3>

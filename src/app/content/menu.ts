@@ -61,7 +61,7 @@ export const MenuItems = [
     ]
   },
   {
-    title: "Staff Augmentation",
+    title: "Staffing",
     url: "staffing",
     icon: "fa fa-user-plus"
   },
