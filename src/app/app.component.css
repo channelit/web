@@ -5,7 +5,18 @@
 .social-icon {
   padding-right: 14px;
 }
-
+.sm-menu-icon {
+  padding-right:8px;
+}
+.sm-menu-button {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .sm-menu-button {
+    padding-right: 0;
+  }
+}
 .toolbar-logo {
   height: 40px;
   padding: 4px;

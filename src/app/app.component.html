@@ -2,7 +2,7 @@
   <span class="toolbar-logo-holder"><img src="../assets/logo_transparent.png" class="toolbar-logo"></span>
   <span>
     <div routerLink="home" class="company-name-holder">
-        <span>Channel IT Services, LLC</span>
+        <span>Channel IT Services, llc</span>
         <span class="trademark">Implementing The Future&trade;</span>
     </div>
   </span>
@@ -23,22 +23,21 @@
       </md-menu>
     </span>
   </div>
-  <div fxHide fxHide.lt-lg="false">
-    <button md-icon-button [mdMenuTriggerFor]="smmenu">
-      <span class="social-icon"><i class="fa fa-bars fa-2x"></i></span>
-    </button>
+  <div fxHide fxShow.lt-lg>
+    <span class="sm-menu-button" [mdMenuTriggerFor]="smmenu"><i class="fa fa-bars fa-lg fa-border"></i></span>
     <md-menu #smmenu="mdMenu">
       <div *ngFor="let item of menuItems; let mindex = index">
         <a md-button routerLink="{{item.url}}" fragment="service">
+          <i class="sm-menu-icon {{item.icon}}"></i>
           {{item.title}}
         </a>
       </div>
     </md-menu>
   </div>
-  <span class="main-toolbar-fill"  fxShow fxHide.lt-lg="true"></span>
-  <span class="social-icon"><i class="fa fa-linkedin"></i></span>
-  <span class="social-icon"><i class="fa fa-github"></i></span>
-  <span class="social-icon"><i class="fa fa-google-plus"></i></span>
+  <span class="main-toolbar-fill" fxHide.lt-lg></span>
+  <span class="social-icon" fxHide.lt-sm><i class="fa fa-linkedin"></i></span>
+  <span class="social-icon" fxHide.lt-sm><i class="fa fa-github"></i></span>
+  <span class="social-icon" fxHide.lt-sm><i class="fa fa-google-plus"></i></span>
 </md-toolbar>
 <app-banner></app-banner>
 <router-outlet></router-outlet>

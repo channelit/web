@@ -2,6 +2,7 @@ export const MenuItems = [
   {
     title: "Enterprise Search",
     url: "search",
+    icon: "fa fa-search-plus",
     items : [
       {
         title: "Design and Implementation",
@@ -24,6 +25,7 @@ export const MenuItems = [
   {
     title: "Data Analytics",
     url: "analytics",
+    icon: "fa fa-area-chart",
     items: [
       {
         title: "Machine Learning",
@@ -42,6 +44,7 @@ export const MenuItems = [
   {
     title: "Big Data & Cloud",
     url: "cloud",
+    icon: "fa fa-cloud",
     items: [
       {
         title: "BigData Expertise",
@@ -60,13 +63,16 @@ export const MenuItems = [
   {
     title: "Staff Augmentation",
     url: "staffing",
+    icon: "fa fa-user-plus"
   },
   {
     title: "Clients",
-    url: "clients"
+    url: "clients",
+    icon: "fa fa-handshake-o"
   },
   {
     title: "About Us",
-    url: "about"
+    url: "about",
+    icon: "fa fa-id-card-o"
   }
 ];
