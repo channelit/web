@@ -1,4 +1,4 @@
-<md-toolbar color="primary" [@toolbarAnimation]="state" class="main-toolbar">
+<md-toolbar color="primary" [@toolbarAnimation]="state" class="main-toolbar mat-elevation-z3">
   <span class="toolbar-logo-holder"><img src="../assets/logo_transparent.png" class="toolbar-logo"></span>
   <span>
     <div routerLink="home" class="company-name-holder">
@@ -7,21 +7,35 @@
     </div>
   </span>
   <span class="main-toolbar-fill"></span>
-  <span *ngFor="let item of menuItems; let mindex = index">
-    <a md-button *ngIf="!item.items" routerLink="{{item.url}}" fragment="service">
-      <h2>{{item.title}}</h2>
-    </a>
-    <a md-button *ngIf="item.items" [routerLink]="item.url" fragment="service" [mdMenuTriggerFor]="innerMenu">
-      <h2>{{item.title}}</h2>
-    </a>
-    <md-menu #innerMenu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
-      <button md-menu-item *ngFor="let menuItem of item.items">
-        <md-icon>{{menuItem.icon}}</md-icon>
-        <span>{{menuItem.title}}</span>
-      </button>
+  <div fxShow fxHide.lt-lg="true">
+    <span *ngFor="let item of menuItems; let mindex = index">
+      <a md-button *ngIf="!item.items" routerLink="{{item.url}}" fragment="service">
+        <h3>{{item.title}}</h3>
+      </a>
+      <a md-button *ngIf="item.items" [routerLink]="item.url" fragment="service" [mdMenuTriggerFor]="innerMenu">
+        <h3>{{item.title}}</h3>
+      </a>
+      <md-menu #innerMenu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
+        <button md-menu-item *ngFor="let menuItem of item.items">
+          <md-icon>{{menuItem.icon}}</md-icon>
+          <span>{{menuItem.title}}</span>
+        </button>
+      </md-menu>
+    </span>
+  </div>
+  <div fxHide fxHide.lt-lg="false">
+    <button md-icon-button [mdMenuTriggerFor]="smmenu">
+      <span class="social-icon"><i class="fa fa-bars fa-2x"></i></span>
+    </button>
+    <md-menu #smmenu="mdMenu">
+      <div *ngFor="let item of menuItems; let mindex = index">
+        <a md-button routerLink="{{item.url}}" fragment="service">
+          {{item.title}}
+        </a>
+      </div>
     </md-menu>
-  </span>
-  <span class="main-toolbar-fill"></span>
+  </div>
+  <span class="main-toolbar-fill"  fxShow fxHide.lt-lg="true"></span>
   <span class="social-icon"><i class="fa fa-linkedin"></i></span>
   <span class="social-icon"><i class="fa fa-github"></i></span>
   <span class="social-icon"><i class="fa fa-google-plus"></i></span>
