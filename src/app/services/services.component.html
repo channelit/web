@@ -1,8 +1,8 @@
 <a id="service"></a>
 <div *ngIf="servicesContents.length > 0">
   <div class="mat-typography" *ngFor="let servicesContent of servicesContents">
-    <span>{{servicesContent.serviceTitle}}</span>
-    <div fxLayout="row" fxLayoutAlign="space-around center">
+    <span class="mat-toolbar text-primary-color services-main-title">{{servicesContent.serviceTitle}}</span>
+    <div fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="space-around center">
       <div fxFlex  *ngFor="let service of servicesContent.serviceItems">
         <app-service [content]="service.content"></app-service>
       </div>

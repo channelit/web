@@ -4,16 +4,20 @@ export const MenuItems = [
     url: "search",
     items : [
       {
-        title: "Design and Implementation"
+        title: "Design and Implementation",
+        anchor: "di"
       },
       {
-        title: "Software and Products"
+        title: "Software and Products",
+        anchor: "sp"
       },
       {
-        title: "Relevancy Tuning"
+        title: "Relevancy Tuning",
+        anchor: "rt"
       },
       {
-        title: "Search Optimizations"
+        title: "Search Optimizations",
+        anchor: "so"
       }
     ]
   },
@@ -22,13 +26,16 @@ export const MenuItems = [
     url: "analytics",
     items: [
       {
-        title: "Machine Learning"
+        title: "Machine Learning",
+        anchor: "ml"
       },
       {
-        title: "Cognitive Search"
+        title: "Cognitive Search",
+        anchor : "cs"
       },
       {
-        title: "Natural Language Processing"
+        title: "Natural Language Processing",
+        anchor: "nlp"
       }
     ]
   },
@@ -38,12 +45,15 @@ export const MenuItems = [
     items: [
       {
         title: "BigData Expertise",
+        anchor: "be"
       },
       {
-        title: "Cloud Migration"
+        title: "Cloud Migration",
+        anchor: "cm"
       },
       {
-        title: "IoT Systems"
+        title: "IoT Systems",
+        anchor: "iot"
       }
     ]
   },
