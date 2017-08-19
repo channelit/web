@@ -69,27 +69,29 @@ export const SearchServices = {
         cols: "3",
         content: {
           title: "Relevancy Tuning",
-          subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
+          subtitle: "We provide services engagement for improving the relevancy of search results within an existing Lucene based search/indexing implementations of Solr and ElasticSearch.",
           body: [
             {
-              title: "Document Security",
+              title: "Bayesian Classification ",
               content: [
-                "Our team in vastly more familiar with the needs of our customers related to Authenticatioj, Authorization and Security of documents which resides in the system.",
-                "We help our customers to integrate Document Level Security in search indexes and search results by implementing stat of the art solutions which combines power of <strong>Graph DataAlgorithms and NOSQL datastores.</strong>"
+                "The classification in Search Engine can be implemented at index time and/or query time",
+                "We can develop or customize existing search setup for tagging the data being indexed which can drastically improve improve relevancy at search time.",
+                "Our approach for classification provides <strong>dynamic optimization</strong> of Bayesian estimators based on virtual feedback from logs and user behavior analysis."
               ]
             },
             {
-              title: "Connectors",
+              title: "Proximity Boosting",
               content: [
                 "Our team has many years of experience building custom connectors that can access your data from all your sources including databases, intranets, network drives, SharePoint, Documentum, Google Drive, CRM systems and the cloud.",
                 "With the connector architecture we have built, our customers enjoy full control over source code, easy maintenance and version upgrades as they evolve/upgrade their content management platforms."
               ]
             },
             {
-              title: "Data Ingestion",
+              title: "Word2Vec",
               content: [
-                "We have proven proficiency in optimizing Data Ingesting techniques in various Enterprise Search Platforms like Solr, Elastic, IBM Watson and Google Enterprise Search.",
-                "Our team is proficient in myriad of languages and tools which they use to provide Custom data ingestion process and gives full control to the customer."
+                "Google's Word2Vec algorithm is result of years of research and provides amazing results for relevancy",
+                "Various implementations are available in Java, JavaScript, Go and various other languages.",
+                "With our help it gets really easy to integrate 'Google Like' Type Ahead and Suggestions to yoru Enterprise Search implementation"
               ]
             }
           ]

@@ -1,9 +1,9 @@
 <a id="service"></a>
 <div *ngIf="servicesContents.length > 0">
   <div class="mat-typography" *ngFor="let servicesContent of servicesContents">
-    <span class="mat-toolbar text-primary-color services-main-title">{{servicesContent.serviceTitle}}</span>
-    <div fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="space-around center">
-      <div fxFlex  *ngFor="let service of servicesContent.serviceItems">
+    <div fxLayout="column" fxLayoutGap="10px" fxFlex>
+      <div class="text-primary-color services-main-title"><h1>{{servicesContent.serviceTitle}}</h1></div>
+      <div  *ngFor="let service of servicesContent.serviceItems">
         <app-service [content]="service.content"></app-service>
       </div>
     </div>
