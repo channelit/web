@@ -55,10 +55,10 @@ export const SearchServices = {
               ]
             },
             {
-              title: "Data Ingestion",
+              title: "MongodB, Cassandra, BigTable, Neo4J",
               content: [
-                "We have proven proficiency in optimizing Data Ingesting techniques in various Enterprise Search Platforms like Solr, Elastic, IBM Watson and Google Enterprise Search.",
-                "Our team is proficient in myriad of languages and tools which they use to provide Custom data ingestion process and gives full control to the customer."
+                "Our custom data ingesting and search pipelines include connectors for various RDBMS that create cache in NoSQL stores like MongoDB and Cassandra.",
+                "With powerful aggregation framework available in MongoDB and various plugins for Cassandra, our customers can get great flexibility for faster indexing and analytics."
               ]
             }
           ]

@@ -17,6 +17,7 @@ import { ServiceCardDirective } from './services/service-card.directive';
 import { HtmlTagPipe } from './pipes/html-tag.pipe';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './services/service/service.component';
+import { IdMakerPipe } from './pipes/id-maker.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ServiceComponent } from './services/service/service.component';
     ServiceCardDirective,
     HtmlTagPipe,
     AboutComponent,
-    ServiceComponent
+    ServiceComponent,
+    IdMakerPipe
   ],
   imports: [
     BrowserModule,

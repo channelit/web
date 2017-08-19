@@ -5,20 +5,16 @@ export const MenuItems = [
     icon: "fa fa-search-plus",
     items : [
       {
-        title: "Design and Implementation",
-        anchor: "di"
+        title: "Design and Implementation"
       },
       {
-        title: "Software and Products",
-        anchor: "sp"
+        title: "Software and Products"
       },
       {
-        title: "Relevancy Tuning",
-        anchor: "rt"
+        title: "Relevancy Tuning"
       },
       {
-        title: "Search Optimizations",
-        anchor: "so"
+        title: "Search Optimizations"
       }
     ]
   },
@@ -28,16 +24,13 @@ export const MenuItems = [
     icon: "fa fa-area-chart",
     items: [
       {
-        title: "Machine Learning",
-        anchor: "ml"
+        title: "Machine Learning"
       },
       {
-        title: "Cognitive Search",
-        anchor : "cs"
+        title: "Cognitive Search"
       },
       {
-        title: "Natural Language Processing",
-        anchor: "nlp"
+        title: "Natural Language Processing"
       }
     ]
   },
@@ -47,16 +40,13 @@ export const MenuItems = [
     icon: "fa fa-cloud",
     items: [
       {
-        title: "BigData Expertise",
-        anchor: "be"
+        title: "BigData Expertise"
       },
       {
-        title: "Cloud Migration",
-        anchor: "cm"
+        title: "Cloud Migration"
       },
       {
-        title: "IoT Systems",
-        anchor: "iot"
+        title: "IoT Systems"
       }
     ]
   },

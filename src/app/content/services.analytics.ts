@@ -6,7 +6,6 @@ export const AnalyticalServices = {
       cols: "3",
       content: {
         title: "Machine Learning",
-        anchor: "ml",
         subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
         body: [
           {
@@ -38,7 +37,6 @@ export const AnalyticalServices = {
       cols: "3",
       content: {
         title: "Cognitive Search",
-        anchor: "cs",
         subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
         body: [
           {
@@ -70,7 +68,6 @@ export const AnalyticalServices = {
       cols: "3",
       content: {
         title: "Natural Language Processing",
-        anchor: "nlp",
         subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
         body: [
           {

@@ -13,4 +13,4 @@ npm update -D && npm update -S
 npm install express --save
 
 npm install material-design-icons --save
-ng g pipe pipes/htmlTags/h3Tag
+ng g pipe pipes/htmlTags
