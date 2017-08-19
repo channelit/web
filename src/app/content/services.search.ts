@@ -37,7 +37,7 @@ export const SearchServices = {
         rows: "2",
         cols: "3",
         content: {
-          title: "Search Experties",
+          title: "Search Engine Experties",
           subtitle: "Over many years of <b>Enterprise Search Consulting</b>, we have gained experience in various leading search engines, both commercial and open-source",
           body: [
             {
@@ -82,8 +82,8 @@ export const SearchServices = {
             {
               title: "Proximity Boosting",
               content: [
-                "Our team has many years of experience building custom connectors that can access your data from all your sources including databases, intranets, network drives, SharePoint, Documentum, Google Drive, CRM systems and the cloud.",
-                "With the connector architecture we have built, our customers enjoy full control over source code, easy maintenance and version upgrades as they evolve/upgrade their content management platforms."
+                "Boosting of search results by fields or query terms is one of the quickest way to improve relevancy. By developing external algorithm to calculate proximity score of search terms the boost parameters can be dynamically adjusted.",
+                "Channel IT Services, in addition to adjusting boosting parameters, can help develop proximity calculation modules around the core search engine in use."
               ]
             },
             {
@@ -101,7 +101,7 @@ export const SearchServices = {
         rows: "2",
         cols: "3",
         content: {
-          title: "Search Optimizations",
+          title: "Search Engine Optimizations",
           subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
           body: [
             {
