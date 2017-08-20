@@ -10,7 +10,11 @@
         <md-card-header>
           <md-card-title [innerHTML]="body.title | htmlTag:'h2'"></md-card-title>
         </md-card-header>
-        <md-card-content [innerHTML]="body.content | htmlTag:'h3'">
+        <md-card-content>
+          <ul>
+            <li *ngFor="let contentItem of body.content" [innerHTML]="contentItem | htmlTag:'h3'"></li>
+          </ul>
+
         </md-card-content>
       </md-card>
     </section>

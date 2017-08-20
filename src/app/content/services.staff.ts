@@ -1,18 +1,16 @@
 export const StaffingServices = {
-  serviceTitle: "Staff Augmentation",
+  serviceTitle: "Staffing",
   serviceItems: [
     {
       rows: "2",
       cols: "3",
       content: {
-        title: "Technical Experties",
-        subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
+        title: "IT Staffing",
+        subtitle: "Our consultants are skilled professionals provide immense value and adopt and combine new technology with legacy. They contribute directly to the clients' growth and success.",
         body: [
           {
-            title: "Document Security",
+            title: "Cleared Personnel",
             content: [
-              "Our team in vastly more familiar with the needs of our customers related to Authenticatioj, Authorization and Security of documents which resides in the system.",
-              "We help our customers to integrate Document Level Security in search indexes and search results by implementing stat of the art solutions which combines power of <strong>Graph DataAlgorithms and NOSQL datastores.</strong>"
             ]
           },
           {
@@ -23,7 +21,7 @@ export const StaffingServices = {
             ]
           },
           {
-            title: "Data Ingestion",
+            title: "Temp-to-Hire",
             content: [
               "We have proven proficiency in optimizing Data Ingesting techniques in various Enterprise Search Platforms like Solr, Elastic, IBM Watson and Google Enterprise Search.",
               "Our team is proficient in myriad of languages and tools which they use to provide Custom data ingestion process and gives full control to the customer."

@@ -19,7 +19,7 @@ export const MenuItems = [
     ]
   },
   {
-    title: "Data Analytics",
+    title: "Machine Learning",
     url: "analytics",
     icon: "fa fa-area-chart",
     items: [

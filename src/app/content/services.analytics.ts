@@ -1,12 +1,12 @@
 export const AnalyticalServices = {
-  serviceTitle: "Data Analytics & Machine Learning",
+  serviceTitle: "Machine Learning",
   serviceItems: [
     {
       rows: "2",
       cols: "3",
       content: {
         title: "Machine Learning",
-        subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
+        subtitle: "CITS team has proven experties in various aspects of data analytics and machine learning.",
         body: [
           {
             title: "Document Security",
