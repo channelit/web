@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
-  @Input() content:string;
+  @Input() content:any;
 
   constructor() { }
 
