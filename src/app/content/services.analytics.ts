@@ -6,27 +6,27 @@ export const AnalyticalServices = {
       cols: "3",
       content: {
         title: "Machine Learning",
-        subtitle: "CITS team has proven experties in various aspects of data analytics and machine learning.",
+        subtitle: "Our approach to combining powerful indexing engine with machine learning enables our users to perform Business Analytics and Security Analytics.",
         body: [
           {
-            title: "Document Security",
+            title: "Dynamic Patterns and Models",
             content: [
-              "Our team in vastly more familiar with the needs of our customers related to Authenticatioj, Authorization and Security of documents which resides in the system.",
-              "We help our customers to integrate Document Level Security in search indexes and search results by implementing stat of the art solutions which combines power of <strong>Graph DataAlgorithms and NOSQL datastores.</strong>"
+              "Our unique approach combines Indexing engine with <b>Unsupervised Machine Learning</b> algorithms to detect anomalies in data, behavioural patterns and high influence characteristics.",
+              "Detecting data anamolies, patterns and influencing fields further helps in advancing threat detection, sales growth and customer satisfaction."
             ]
           },
           {
-            title: "Connectors",
+            title: "Trained Models",
             content: [
-              "Our team has many years of experience building custom connectors that can access your data from all your sources including databases, intranets, network drives, SharePoint, Documentum, Google Drive, CRM systems and the cloud.",
-              "With the connector architecture we have built, our customers enjoy full control over source code, easy maintenance and version upgrades as they evolve/upgrade their content management platforms."
+              "Open-source machine learning libraries in <b>Python, R, Java</b> also provides huge collection of <b>Pre-Trained models</b>. We evaluate various trained models in variety of areas.",
+              "Our Data Analytics experts can compare results of various pre-trained models and find most suitable and sustainable machine learning approach for our customers."
             ]
           },
           {
-            title: "Data Ingestion",
+            title: "Classification",
             content: [
-              "We have proven proficiency in optimizing Data Ingesting techniques in various Enterprise Search Platforms like Solr, Elastic, IBM Watson and Google Enterprise Search.",
-              "Our team is proficient in myriad of languages and tools which they use to provide Custom data ingestion process and gives full control to the customer."
+              "We use statistical classification with <b>Bayesian Classifier</b> and <b>Support Vector Machine (SVM)</b> for tagging, data mining and relevancy.",
+              "Our custom architecture enables our clients to even compare and switch classification models that suites the most."
             ]
           }
         ]
