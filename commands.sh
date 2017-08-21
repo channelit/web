@@ -16,6 +16,6 @@
 sudo npm install -g @angular/cli
 ng build
 cd build
-npm init
+npm init -f
 npm install --save express
 gcloud app deploy --quiet
