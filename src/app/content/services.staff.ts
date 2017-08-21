@@ -11,20 +11,20 @@ export const StaffingServices = {
           {
             title: "Cleared Personnel",
             content: [
+              "Security Clearance is our specialty. We connect security-cleared professionals looking for security clearance jobs with local, state, or federal government jobs or security jobs in the private sector in the US."
             ]
           },
           {
-            title: "Connectors",
+            title: "Information Technology",
             content: [
-              "Our team has many years of experience building custom connectors that can access your data from all your sources including databases, intranets, network drives, SharePoint, Documentum, Google Drive, CRM systems and the cloud.",
-              "With the connector architecture we have built, our customers enjoy full control over source code, easy maintenance and version upgrades as they evolve/upgrade their content management platforms."
+              "We hire consultants with business vision in addition to passion about technology with ability to translate business objectives into technical solutions.",
+              "Our technical team is experienced in assuring project deliverables on time and on schedule."
             ]
           },
           {
             title: "Temp-to-Hire",
             content: [
-              "We have proven proficiency in optimizing Data Ingesting techniques in various Enterprise Search Platforms like Solr, Elastic, IBM Watson and Google Enterprise Search.",
-              "Our team is proficient in myriad of languages and tools which they use to provide Custom data ingestion process and gives full control to the customer."
+              "When clients are impressed with our consultants' skill-sets that they aspire to employ the consultant on a full-time basis. therefore, we have implemented client-friendly terms for the conversion of contingent or temporary labor to permanent employees."
             ]
           }
         ]
