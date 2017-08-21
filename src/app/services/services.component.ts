@@ -30,23 +30,18 @@ export class ServicesComponent implements OnInit {
   serviceConstants(service:string) {
     switch (service) {
       case 'cloud' :
-        console.log('cloud' + service);
         this.servicesContents = [CloudServices];
         break;
       case 'analytics' :
-        console.log('analytics' + service);
         this.servicesContents = [AnalyticalServices];
         break;
       case 'search' :
-        console.log('search' + service);
         this.servicesContents = [SearchServices];
         break;
       case 'staffing' :
-        console.log('staffing' + service);
         this.servicesContents = [StaffingServices];
         break;
       default:
-        console.log('default' + service);
         this.servicesContents = [
           SearchServices, CloudServices, AnalyticalServices, StaffingServices
         ];

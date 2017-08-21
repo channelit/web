@@ -44,7 +44,6 @@ export class AppComponent implements OnInit, OnChanges {
     if (this.dir === 'down' && window.pageYOffset >= 20) {
       if (this.state === 'full') {
         this.state = 'small';
-        console.log("making small")
       }
     }
     if (this.dir === 'up' && window.pageYOffset==0) {
