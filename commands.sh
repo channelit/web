@@ -14,6 +14,7 @@
 
 ######### Google Cloud App Engine Build and Deploy sequence ########
 sudo npm install -g @angular/cli
+rm -rf dist
 ng build --prod
 cd dist
 npm init -f
