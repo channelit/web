@@ -1,3 +1,7 @@
 .client-logo {
   filter: grayscale(75%);
 }
+.client-card-holder {
+  width: 270px;
+  height: 200px
+}
