@@ -16,10 +16,9 @@
         <h3>{{item.title}}</h3>
       </a>
       <md-menu #innerMenu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
-        <a md-button *ngFor="let menuItem of item.items" [routerLink]="item.url" fragment="{{menuItem.title | idMaker}}">
-          <md-icon>{{menuItem.icon}}</md-icon>
-          <span>{{menuItem.title}}</span>
-        </a>
+        <button md-menu-item *ngFor="let menuItem of item.items" [routerLink]="item.url" fragment="{{menuItem.title | idMaker}}">
+          {{menuItem.title}}
+        </button>
       </md-menu>
     </span>
   </div>
