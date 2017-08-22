@@ -25,6 +25,14 @@ export const CloudServices = {
               ]
             },
             {
+              title: "Microservice Frameworks",
+              content: [
+                  "Spring Cloud",
+                  "Netflix OSS",
+                  "Lagom (LightBend)"
+              ]
+            },
+            {
               title: "Search",
               content: [
                 "Solr",
@@ -34,10 +42,20 @@ export const CloudServices = {
             {
               title: "Realtime Data Streams",
               content: [
-                "Kafka",
+                "Apache Flink",
+                "Apache Kafka",
                 "Spark Streaming",
-                "RabbitMQ"
+                "RabbitMQ",
+                "Apache Beam"
 
+              ]
+            },
+            {
+              title: "Graph Computing",
+              content: [
+                "Neo4J",
+                "Spark GraphFrames",
+                "JanusGraph"
               ]
             }
           ]
