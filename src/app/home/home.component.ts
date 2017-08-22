@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {NavigationEnd, Router} from "@angular/router";
+import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -8,12 +8,13 @@ import {NavigationEnd, Router} from "@angular/router";
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router) {
-    // router.events
-    //   .filter(event => event instanceof NavigationEnd)
-    //   .subscribe((event: NavigationEnd) => {
-    //     window.scroll(0, 0);
-    //   });
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.fragment.subscribe(f => {
+      const element = document.querySelector("#" + f);
+      if (element) {
+        window.scrollBy(0, 0);
+      }
+    });
   }
 
   ngOnInit() {

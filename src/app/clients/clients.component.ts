@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Clients} from '../content/clients';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-clients',
@@ -8,7 +9,15 @@ import {Clients} from '../content/clients';
 })
 export class ClientsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.fragment.subscribe(f => {
+      const element = document.querySelector("#" + f);
+      if (element) {
+        element.scrollIntoView(element);
+        window.scrollBy(0, -64);
+      }
+    });
+  }
 
   ngOnInit() {
 

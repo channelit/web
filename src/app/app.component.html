@@ -1,7 +1,7 @@
 <md-toolbar color="primary" [@toolbarAnimation]="state" class="main-toolbar mat-elevation-z3">
   <span class="toolbar-logo-holder"><img src="../assets/logo_transparent.png" class="toolbar-logo"></span>
   <span>
-    <div routerLink="home" class="company-name-holder">
+    <div routerLink="home" fragment="home" class="company-name-holder">
         <span>Channel IT Services, llc</span>
         <span class="trademark">Implementing The Future&trade;</span>
     </div>
@@ -9,10 +9,10 @@
   <span class="main-toolbar-fill"></span>
   <div fxShow fxHide.lt-lg>
     <span *ngFor="let item of menuItems; let mindex = index">
-      <a md-button *ngIf="!item.items" [routerLink]="item.url" [fragment]="item.url">
+      <a md-button *ngIf="!item.items" [routerLink]="item.url" fragment="start">
         <h3>{{item.title}}</h3>
       </a>
-      <a md-button *ngIf="item.items" [routerLink]="item.url" [fragment]="item.url" [mdMenuTriggerFor]="innerMenu">
+      <a md-button *ngIf="item.items" [routerLink]="item.url" fragment="start" [mdMenuTriggerFor]="innerMenu">
         <h3>{{item.title}}</h3>
       </a>
       <md-menu #innerMenu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
@@ -26,7 +26,7 @@
     <span class="sm-menu-button" [mdMenuTriggerFor]="smmenu"><i class="fa fa-bars fa-lg fa-border"></i></span>
     <md-menu #smmenu="mdMenu">
       <div *ngFor="let item of menuItems; let mindex = index">
-        <a md-button routerLink="{{item.url}}" fragment="{{item.url}}">
+        <a md-button routerLink="{{item.url}}" fragment="start">
           <i class="sm-menu-icon {{item.icon}}"></i>
           {{item.title}}
         </a>
@@ -38,5 +38,7 @@
   <span class="social-icon" fxHide.lt-sm><i class="fa fa-github"></i></span>
   <span class="social-icon" fxHide.lt-sm><i class="fa fa-google-plus"></i></span>
 </md-toolbar>
+<a id="home"></a>
 <app-banner></app-banner>
+<a id="start"></a>
 <router-outlet></router-outlet>

@@ -16,7 +16,6 @@ export class AboutComponent implements OnInit {
         window.scrollBy(0, -64);
       }
     });
-
   }
 
   ngOnInit() {
