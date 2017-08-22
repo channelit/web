@@ -37,21 +37,20 @@ export const AnalyticalServices = {
       cols: "3",
       content: {
         title: "Cognitive Search",
-        subtitle: "",
+        subtitle: "We combine power of open-source cognitive tools with your existing search infrastructure and take it to next leve!",
         body: [
           {
-            title: "AWS AI",
-            content: [
+            title: "Deep Learning",
+            content: ["TensorFlow","Torch", "Caffe", "Theano"
               ]
           },
           {
-            title: "Google AI",
-            content: [
-              ]
+            title: "Artificial Intelligence",
+            content: [ "Microsoft Cognitive Toolkit (CNTK)", "Amazon AI Tools (Speech, Text, Pictures)", "Google Cloud TensorFlow pre-trained models", "Amelia (IPSoft)", "IBM Watson Cloud API"              ]
           },
           {
-            title: "IPSoft",
-            content: []
+            title: "Decision Support Systems Chatbot",
+            content: ["Microsoft", "Google", "Slack"]
           }
         ]
       }
@@ -64,17 +63,13 @@ export const AnalyticalServices = {
         subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
         body: [
           {
-            title: "TensorFlow",
-            content: []
+            title: "Sentiment Analysis",
+            content: ["We can integrate SaS services to your existing search and analytics platforms to ingest market sentiments and user feedback."]
           },
           {
-            title: "DL4J",
-            content: [
+            title: "Dynamic Word2Vec",
+            content: [ "We can use various open-source tools to create dynamic word2vec models to achieve desired search expectations and machine learning."
               ]
-          },
-          {
-            title: "Torch, Theano, Caffe",
-            content: []
           }
         ]
       }
