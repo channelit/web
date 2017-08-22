@@ -66,18 +66,18 @@ export const CloudServices = {
         cols: "3",
         content: {
           title: "Cloud Migration",
-          subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
+          subtitle: "We have helped our customers to build transition systems from MainFrame to Cloud including developing system to synchronize data while both systems are live during transition period.",
           body: [
             {
-              title: "Google Cloud",
+              title: "Google Cloud Platform",
               content: []
             },
             {
-              title: "AWS",
+              title: "Amazone Web Services (AWS)",
               content: []
             },
             {
-              title: "Azure",
+              title: "Microsoft Azure",
               content: []
             }
           ]
@@ -88,7 +88,7 @@ export const CloudServices = {
         cols: "3",
         content: {
           title: "IoT Systems",
-          subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
+          subtitle: "We have helped our customers to design IoT platform as PoC using various platforms.",
           body: [
             {
               title: "AWS IoT",
