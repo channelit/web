@@ -18,6 +18,7 @@ import { HtmlTagPipe } from './pipes/html-tag.pipe';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './services/service/service.component';
 import { IdMakerPipe } from './pipes/id-maker.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { IdMakerPipe } from './pipes/id-maker.pipe';
     HtmlTagPipe,
     AboutComponent,
     ServiceComponent,
-    IdMakerPipe
+    IdMakerPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
