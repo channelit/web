@@ -1,0 +1,15 @@
+.footer-div {
+  background: #347DCE;
+  opacity: 0.9;
+  text-align: center;
+  color: white;
+}
+.footer-company-name {
+  text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.footer-trademark {
+  /*text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;*/
+  font-size: 14px;
+}
