@@ -17,6 +17,11 @@
         <p>SBA 8(a) Certified</p>
         <p>Women Owned Small Business</p>
       </div>
+      <md-chip-list>
+        <md-chip *ngFor="let item of menuItems | filter:'important'" routerLink="{{item.url}}" fragment="start" fxHide fxShow.lt-lg>
+          {{item.title}}
+        </md-chip>
+      </md-chip-list>
     </md-card>
     <md-card class="banner-card-overlay-card mat-elevation-z6" fxHide.lt-sm>
         <div class="banner-naics">

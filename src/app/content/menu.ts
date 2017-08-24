@@ -2,6 +2,7 @@ export const MenuItems = [
   {
     title: "Enterprise Search",
     url: "search",
+    important: true,
     icon: "fa fa-search-plus",
     items : [
       {
@@ -21,6 +22,7 @@ export const MenuItems = [
   {
     title: "Machine Learning",
     url: "analytics",
+    important: true,
     icon: "fa fa-area-chart",
     items: [
       {
@@ -37,6 +39,7 @@ export const MenuItems = [
   {
     title: "Big Data & Cloud",
     url: "cloud",
+    important: true,
     icon: "fa fa-cloud",
     items: [
       {

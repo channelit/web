@@ -19,6 +19,7 @@ import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './services/service/service.component';
 import { IdMakerPipe } from './pipes/id-maker.pipe';
 import { FooterComponent } from './footer/footer.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     ServiceComponent,
     IdMakerPipe,
-    FooterComponent
+    FooterComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
