@@ -7,7 +7,7 @@ export const CloudServices = {
         cols: "3",
         content: {
           title: "BigData Expertise",
-          subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
+          subtitle: "We have successfully developed <strong>Big Data Enterprise Search</strong> systems for Federal and Commercial customers.",
           body: [
             {
               title: "NoSQL Databases",
