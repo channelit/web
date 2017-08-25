@@ -17,8 +17,8 @@
         <p>SBA 8(a) Certified</p>
         <p>Women Owned Small Business</p>
       </div>
-      <md-chip-list>
-        <md-chip *ngFor="let item of menuItems | filter:'important'" routerLink="{{item.url}}" fragment="start" fxHide fxShow.lt-lg>
+      <md-chip-list fxHide fxShow.lt-lg>
+        <md-chip *ngFor="let item of menuItems | filter:'important'" routerLink="{{item.url}}" fragment="start">
           {{item.title}}
         </md-chip>
       </md-chip-list>
