@@ -1,9 +1,18 @@
 <md-toolbar color="none">
-  <span>Our Clients</span>
+  <span>Our Direct and Indirect Clients</span>
 </md-toolbar>
-<div fxLayoutWrap fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center" fxLayoutGap="10px" class="mat-typography">
+<div fxLayoutWrap fxLayout="row" fxShow fxHide.lt-md fxLayoutAlign="space-around center" fxLayoutGap="10px" class="mat-typography">
   <div fxFlex="grow" fxLayoutAlign="center"><hr class="mat-divider"></div>
   <div fxFlex="25" fxLayoutAlign="center" *ngFor="let client of clients" class="client-logo">
+    <div style="height: 400px">
+      <md-card>
+        <img md-card-xl-image src="{{client.logo}}">
+      </md-card>
+    </div>
+  </div>
+</div>
+<div fxLayout="column" fxHide fxShow.lt-md>
+  <div fxLayoutAlign="center" *ngFor="let client of clients" class="client-logo">
     <div style="height: 400px">
       <md-card>
         <img md-card-xl-image src="{{client.logo}}">
