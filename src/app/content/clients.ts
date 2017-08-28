@@ -25,7 +25,7 @@ export const Clients = [
   },
   {
     'name': 'DHS',
-    'logo': '../../assets/img/clients/dhs.png'
+    'logo': '../../assets/img/clients/dhscbp.png'
   },
   {
     'name': 'SRA',
