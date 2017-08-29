@@ -5,8 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class HtmlTagPipe implements PipeTransform {
 
-  transform(value: any, html: string): any {
-    return '<' + html + '>' + value + '</' + html + '>';
+  transform(value: any, htmlTags: string): any {
+    let html=value;
+    htmlTags.split(",").forEach((htmlTag=> html = '<' + htmlTag + '>' + html + '</' + htmlTag + '>'));
+    return html;
   }
 
 }
