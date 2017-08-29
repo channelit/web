@@ -11,21 +11,21 @@ export const AnalyticalServices = {
           {
             title: "Dynamic Patterns and Models",
             content: [
-              "Our unique approach combines Indexing engine with <b>Unsupervised Machine Learning</b> algorithms to detect anomalies in data, behavioural patterns and high influence characteristics.",
+              "Our unique approach combines Indexing engine with <strong>Unsupervised Machine Learning</strong> algorithms to detect anomalies in data, behavioural patterns and high influence characteristics.",
               "Detecting data anamolies, patterns and influencing fields further helps in advancing threat detection, sales growth and customer satisfaction."
             ]
           },
           {
             title: "Trained Models",
             content: [
-              "Open-source machine learning libraries in <b>Python, R, Java</b> also provides huge collection of <b>Pre-Trained models</b>. We evaluate various trained models in variety of areas.",
+              "Open-source machine learning libraries in <strong>Python, R, Java</strong> also provides huge collection of <b>Pre-Trained models</b>. We evaluate various trained models in variety of areas.",
               "Our Data Analytics experts can compare results of various pre-trained models and find most suitable and sustainable machine learning approach for our customers."
             ]
           },
           {
             title: "Classification",
             content: [
-              "We use statistical classification with <b>Bayesian Classifier</b> and <b>Support Vector Machine (SVM)</b> for tagging, data mining and relevancy.",
+              "We use statistical classification with <strong>Bayesian Classifier</strong> and <strong>Support Vector Machine (SVM)</strong> for tagging, data mining and relevancy.",
               "Our custom architecture enables our clients to even compare and switch classification models that suites the most."
             ]
           }
@@ -41,7 +41,7 @@ export const AnalyticalServices = {
         body: [
           {
             title: "Deep Learning",
-            content: ["TensorFlow","Torch", "Caffe", "Theano"
+            content: ["<strong>TensorFlow</strong>","Torch", "Caffe", "Theano"
               ]
           },
           {
@@ -67,7 +67,7 @@ export const AnalyticalServices = {
             content: ["We can integrate SaS services to your existing search and analytics platforms to ingest market sentiments and user feedback."]
           },
           {
-            title: "Dynamic Word2Vec",
+            title: "Dynamic <strong>Word2Vec</strong>",
             content: [ "We can use various open-source tools to create dynamic word2vec models to achieve desired search expectations and machine learning."
               ]
           }

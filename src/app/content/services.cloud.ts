@@ -42,10 +42,10 @@ export const CloudServices = {
             {
               title: "Realtime Data Streams",
               content: [
-                "Apache Flink",
-                "Apache Kafka",
-                "Spark Streaming",
-                "RabbitMQ",
+                "Apache <strong>Flink</strong>",
+                "Apache <strong>Kafka</strong>",
+                "<strong>Spark Streaming</strong>",
+                "<strong>RabbitMQ</strong>",
                 "Apache Beam"
 
               ]
@@ -53,8 +53,8 @@ export const CloudServices = {
             {
               title: "Graph Computing",
               content: [
-                "Neo4J",
-                "Spark GraphFrames",
+                "<strong>Neo4J</strong>",
+                "<strong>Spark GraphFrames</strong>",
                 "JanusGraph"
               ]
             }
@@ -88,7 +88,7 @@ export const CloudServices = {
         cols: "3",
         content: {
           title: "IoT Systems",
-          subtitle: "We have helped our customers to design IoT platform as PoC using various platforms.",
+          subtitle: "We have helped our customers to develop <strong>IoT platform</strong> on cloud services.",
           body: [
             {
               title: "AWS IoT",

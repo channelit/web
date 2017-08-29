@@ -13,3 +13,6 @@ body {
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
 
+strong {
+  color: #cb0b14 !important;
+}
