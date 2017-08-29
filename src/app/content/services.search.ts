@@ -48,17 +48,23 @@ export const SearchServices = {
               ]
             },
             {
-              title: "Elastic (aka ElasticSearch)",
+              title: "Elastic",
               content: [
-                "We provide full support for Elastic configuration and deployment.",
+                "We provide full support for Elastic <strong>configuration</strong> and <strong>deployment</strong>.",
                 "Our trained team members can help solve tuning and relevency problems as well as scalability, automated deployment and containerization."
               ]
             },
             {
               title: "MongodB, Cassandra, BigTable, Neo4J",
               content: [
-                "Our custom data ingesting and search pipelines include connectors for various RDBMS that create cache in NoSQL stores like MongoDB and Cassandra.",
-                "With powerful aggregation framework available in MongoDB and various plugins for Cassandra, our customers can get great flexibility for faster indexing and analytics."
+                "Our <strong>custom data ingesting</strong> and search pipelines include connectors for various RDBMS that create cache in NoSQL stores like MongoDB and Cassandra.",
+                "With powerful aggregation framework available in MongoDB and various plugins for Cassandra, our customers can get great flexibility for <strong>faster indexing</strong> and <strong>advanced analytics</strong>."
+              ]
+            },
+            {
+              title: "Capacity Planing",
+              content: [
+                "We have decades of experience designing Enterprise Search platforms to achieve desired <strong>performance, scalability and reliability</strong> in cloud environments for <strong>SolrCloud</strong> and <strong>Elastic</strong>."
               ]
             }
           ]
@@ -91,7 +97,7 @@ export const SearchServices = {
               content: [
                 "Google's <strong>Word2Vec</strong> algorithm is result of years of research and provides amazing results for relevancy",
                 "Various implementations are available in Java, JavaScript, Go and various other languages.",
-                "With our help it gets really easy to integrate 'Google Like' Type Ahead and Suggestions to yoru Enterprise Search implementation"
+                "With our help it gets really easy to integrate <strong>'Google Like' Type Ahead</strong> and Suggestions to yoru Enterprise Search implementation"
               ]
             }
           ]
