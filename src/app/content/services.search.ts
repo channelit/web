@@ -99,6 +99,12 @@ export const SearchServices = {
                 "Various implementations are available in Java, JavaScript, Go and various other languages.",
                 "With our help it gets really easy to integrate <strong>'Google Like' Type Ahead</strong> and Suggestions to yoru Enterprise Search implementation"
               ]
+            },
+            {
+              title: "BM25 & TF/IDF",
+              content: [
+                "Our unique feedback mechanism allows to <strong>tune ranking coefficient in BM25 </strong>(default in Lucene) or <strong> develop custom decay function for TF/IDF </strong> to achieve relevancy goals of your enterprise."
+              ]
             }
           ]
         }
