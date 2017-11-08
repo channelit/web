@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
     this.activatedRoute.fragment.subscribe(f => {
       const element = document.querySelector("#" + f);
       if (element) {
-        element.scrollIntoView(element);
+        element.scrollIntoView();
         window.scrollBy(0, -64);
       }
     });

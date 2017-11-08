@@ -1,4 +1,4 @@
-<md-toolbar color="primary" [@toolbarAnimation]="state" class="main-toolbar mat-elevation-z3">
+<mat-toolbar color="primary" [@toolbarAnimation]="state" class="main-toolbar mat-elevation-z3">
   <span class="toolbar-logo-holder"><img src="../assets/logo_transparent.png" class="toolbar-logo"></span>
   <span>
     <div routerLink="home" fragment="home" class="company-name-holder">
@@ -9,35 +9,35 @@
   <span class="main-toolbar-fill"></span>
   <div fxShow fxHide.lt-lg>
     <span *ngFor="let item of menuItems; let mindex = index">
-      <a md-button *ngIf="!item.items" [routerLink]="item.url" fragment="start">
+      <a mat-button *ngIf="!item.items" [routerLink]="item.url" fragment="start">
         <h3>{{item.title}}</h3>
       </a>
-      <a md-button *ngIf="item.items" [routerLink]="item.url" fragment="start" [mdMenuTriggerFor]="innerMenu">
+      <a mat-button *ngIf="item.items" [routerLink]="item.url" fragment="start" [matMenuTriggerFor]="innerMenu">
         <h3>{{item.title}}</h3>
       </a>
-      <md-menu #innerMenu="mdMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
-        <button md-menu-item *ngFor="let menuItem of item.items" [routerLink]="item.url" fragment="{{menuItem.title | idMaker}}">
+      <mat-menu #innerMenu="matMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
+        <button mat-menu-item *ngFor="let menuItem of item.items" [routerLink]="item.url" fragment="{{menuItem.title | idMaker}}">
           {{menuItem.title}}
         </button>
-      </md-menu>
+      </mat-menu>
     </span>
   </div>
   <div fxHide fxShow.lt-lg>
-    <span class="sm-menu-button" [mdMenuTriggerFor]="smmenu"><i class="fa fa-bars fa-lg fa-border"></i></span>
-    <md-menu #smmenu="mdMenu">
+    <span class="sm-menu-button" [matMenuTriggerFor]="smmenu"><i class="fa fa-bars fa-lg fa-border"></i></span>
+    <mat-menu #smmenu="matMenu">
       <div *ngFor="let item of menuItems; let mindex = index">
-        <a md-button routerLink="{{item.url}}" fragment="start">
+        <a mat-button routerLink="{{item.url}}" fragment="start">
           <i class="sm-menu-icon {{item.icon}}"></i>
           {{item.title}}
         </a>
       </div>
-    </md-menu>
+    </mat-menu>
   </div>
   <span class="main-toolbar-fill" fxHide.lt-lg></span>
-  <span class="social-icon" fxHide.lt-md><i class="fa fa-linkedin"></i></span>
-  <span class="social-icon" fxHide.lt-md><i class="fa fa-github"></i></span>
-  <span class="social-icon" fxHide.lt-md><i class="fa fa-google-plus"></i></span>
-</md-toolbar>
+  <span class="social-icon" fxHide.lt-mat><i class="fa fa-linkedin"></i></span>
+  <span class="social-icon" fxHide.lt-mat><i class="fa fa-github"></i></span>
+  <span class="social-icon" fxHide.lt-mat><i class="fa fa-google-plus"></i></span>
+</mat-toolbar>
 <a id="home"></a>
 <app-banner></app-banner>
 <a id="start"></a>

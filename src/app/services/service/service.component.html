@@ -1,21 +1,21 @@
 <a id="{{content.title | idMaker}}"></a>
-<md-card class="mat-elevation-z4">
-  <md-card-header>
-    <md-card-title><h2>{{content.title}}</h2></md-card-title>
-    <md-card-subtitle [innerHTML]="content.subtitle | htmlTag:'h3'"></md-card-subtitle>
-  </md-card-header>
-  <md-card-content>
+<mat-card class="mat-elevation-z4">
+  <mat-card-header>
+    <mat-card-title><h2>{{content.title}}</h2></mat-card-title>
+    <mat-card-subtitle [innerHTML]="content.subtitle | htmlTag:'h3'"></mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
     <section *ngFor="let body of content.body">
-      <md-card>
-        <md-card-header>
-          <md-card-title [innerHTML]="body.title | htmlTag:'h2,strong'"></md-card-title>
-        </md-card-header>
-        <md-card-content>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title [innerHTML]="body.title | htmlTag:'h2,strong'"></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
           <ul>
             <li *ngFor="let contentItem of body.content" [innerHTML]="contentItem | htmlTag:'h3'"></li>
           </ul>
-        </md-card-content>
-      </md-card>
+        </mat-card-content>
+      </mat-card>
     </section>
-  </md-card-content>
-</md-card>
+  </mat-card-content>
+</mat-card>

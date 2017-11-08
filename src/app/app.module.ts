@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, RouterState} from '@angular/router';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdMenuModule, MdToolbarModule, MdIconModule, MdButtonModule, MdCardModule, MdChipsModule} from '@angular/material';
+import {MatMenuModule, MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule, MatChipsModule} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppRoutingModule } from './app-routing.module';
@@ -40,12 +40,12 @@ import { FilterPipe } from './pipes/filter.pipe';
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MdIconModule,
-    MdMenuModule,
-    MdToolbarModule,
-    MdChipsModule,
-    MdButtonModule,
-    MdCardModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatChipsModule,
+    MatButtonModule,
+    MatCardModule,
     RouterModule,
     AppRoutingModule
   ],
