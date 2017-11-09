@@ -37,7 +37,6 @@ export class AppComponent implements OnInit, OnChanges {
 
   }
   animateToolbar() {
-    console.log();
     this.dir = (this.posLast > window.pageYOffset ? 'up': 'down');
     this.posLast = window.pageYOffset;
 
@@ -49,7 +48,6 @@ export class AppComponent implements OnInit, OnChanges {
     if (this.dir === 'up' && window.pageYOffset==0) {
       if (this.state === 'small') {
         this.state = 'full';
-        console.log("making full")
       }
     }
   }
