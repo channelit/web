@@ -11,6 +11,8 @@
 #npm update -D && npm update -S
 #npm install material-design-icons --save
 #ng g pipe pipes/htmlTags
+#npm install @angular/{material,cdk,flex-layout,common,compiler,compiler-cli,core,forms,http,platform-browser,platform-browser-dynamic,platform-server,router,animations}@latest typescript@latest --save
+
 
 ######### Google Cloud App Engine Build and Deploy sequence ########
 sudo npm install -g @angular/cli
