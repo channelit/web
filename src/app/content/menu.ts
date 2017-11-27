@@ -9,7 +9,7 @@ export const MenuItems = [
         title: "Design and Implementation"
       },
       {
-        title: "Search Engine Experties"
+        title: "Search Engine Expertise"
       },
       {
         title: "Relevancy Tuning"
