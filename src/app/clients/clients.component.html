@@ -2,14 +2,13 @@
   <span>Our Direct and Indirect Clients</span>
 </mat-toolbar>
 <div fxLayoutWrap fxLayout="row" fxShow fxHide.lt-md fxLayoutAlign="space-around center" fxLayoutGap="10px" class="mat-typography">
-  <div fxFlex="grow" fxLayoutAlign="center"><hr class="mat-divider"></div>
-  <div fxFlex="25" fxLayoutAlign="center" *ngFor="let client of clients" class="client-logo">
-    <div style="height: 400px">
+  <mat-grid-list [cols]="3" fxFlex="25" fxLayoutAlign="center">
+    <mat-grid-tile style="height: 400px" *ngFor="let client of clients" class="client-logo" [colspan]="1" [rowspan]="1">
       <mat-card>
         <img mat-card-xl-image src="{{client.logo}}">
       </mat-card>
-    </div>
-  </div>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
 <div fxLayout="column" fxHide fxShow.lt-md>
   <div fxLayoutAlign="center" *ngFor="let client of clients" class="client-logo">
