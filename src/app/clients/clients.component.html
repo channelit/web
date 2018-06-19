@@ -2,8 +2,8 @@
   <span>Our Direct and Indirect Clients</span>
 </mat-toolbar>
 
-<div fxLayout="row wrap" fxLayout.lt-md="column wrap" fxLayoutAlign="center center" fxLayoutGap="45px" class="mat-typography">
-    <mat-card fxFlexAlign="center" *ngFor="let client of clients" class="client-logo">
+<div fxLayout="row wrap" fxLayout.lt-md="column wrap" fxLayoutAlign="center center" class="mat-typography">
+    <mat-card *ngFor="let client of clients" class="client-logo">
         <img mat-card-xl-image src="{{client.logo}}">
     </mat-card>
 </div>
