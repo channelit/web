@@ -23,8 +23,9 @@ export const AnalyticalServices = {
             ]
           },
           {
-            title: "Classification",
+            title: "Classification & Clustering",
             content: [
+              "We have proven expertise in applying clustering techniques using modern <strong>Deep Learning</strong> and unsupervised machine learning to optimise <strong> document detection, image tagging, improve search results, entity resolution and outlier detection </>.",
               "We use statistical classification with <strong>Bayesian Classifier</strong> and <strong>Support Vector Machine (SVM)</strong> for tagging, data mining and relevancy.",
               "Our custom architecture enables our clients to even compare and switch classification models that suites the most."
             ]
@@ -64,11 +65,11 @@ export const AnalyticalServices = {
         body: [
           {
             title: "Sentiment Analysis",
-            content: ["We can integrate SaS services to your existing search and analytics platforms to ingest market sentiments and user feedback."]
+            content: ["We proven successes in integrating SaS services to existing search and analytics platforms to ingest market sentiments and user feedback."]
           },
           {
             title: "Dynamic <strong>Word2Vec</strong>",
-            content: [ "We can use various open-source tools to create dynamic word2vec models to achieve desired search expectations and machine learning."
+            content: [ "We have proven industry experience to combine various open-source tools to create dynamic word2vec models to achieve desired search expectations and machine learning."
               ]
           }
         ]
