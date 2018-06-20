@@ -1,5 +1,5 @@
 export const AnalyticalServices = {
-  serviceTitle: "Machine Learning",
+  serviceTitle: "Cognitive Systems",
   serviceItems: [
     {
       rows: "2",
