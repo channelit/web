@@ -54,6 +54,17 @@ export const MenuItems = [
     ]
   },
   {
+    title: "Products",
+    url: "products",
+    important: true,
+    icon: "fa fa-paper-plane",
+    items: [
+      {
+        title: "CapsGraph"
+      }
+    ]
+  },
+  {
     title: "Staffing",
     url: "staffing",
     icon: "fa fa-user-plus"
