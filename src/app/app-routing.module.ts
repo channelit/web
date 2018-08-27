@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from "./about/about.component"
-import { ClientsComponent } from './clients/clients.component';
-import { ServicesComponent} from "./services/services.component";
-import { HomeComponent } from './home/home.component';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {AboutComponent} from "./about/about.component"
+import {ClientsComponent} from './clients/clients.component';
+import {ServicesComponent} from "./services/services.component";
+import {HomeComponent} from './home/home.component';
+import {ProductsComponent} from "./products/products.component";
 
 const routes: Routes = [
   {
@@ -13,23 +14,29 @@ const routes: Routes = [
   {
     path: 'search',
     component: ServicesComponent,
-    data: { service: 'search'},
+    data: {service: 'search'},
   },
   {
     path: 'analytics',
     component: ServicesComponent,
-    data: { service: 'analytics'}
+    data: {service: 'analytics'}
   },
   {
     path: 'cloud',
     component: ServicesComponent,
-    data: { service: 'cloud' }
+    data: {service: 'cloud'}
+
+  },
+  {
+    path: 'products',
+    component: ProductsComponent,
+    data: {product: 'search'}
 
   },
   {
     path: 'staffing',
     component: ServicesComponent,
-    data: { service: 'staffing'}
+    data: {service: 'staffing'}
   },
   {
     path: 'about',
@@ -38,7 +45,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    data: { service: 'home'}
+    data: {service: 'home'}
 
   },
   {
@@ -51,4 +58,5 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

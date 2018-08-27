@@ -21,6 +21,7 @@ import { IdMakerPipe } from './pipes/id-maker.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './products/product/product.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ProductsComponent } from './products/products.component';
     IdMakerPipe,
     FooterComponent,
     FilterPipe,
-    ProductsComponent
+    ProductsComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

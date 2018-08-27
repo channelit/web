@@ -61,6 +61,9 @@ export const MenuItems = [
     items: [
       {
         title: "CapsGraph"
+      },
+      {
+        title: "GeoTeGra"
       }
     ]
   },
