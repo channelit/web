@@ -9,8 +9,8 @@ export const Products = {
           subtitle: "Enterprise Search platform based on open source technologies, horizontally scalable, massively parallel processing system for streaming data analytics, machine learning, graph data and cognitive artificial intelligence.",
           body: [
             {
-              title: "Coming Soon!",
-              content: ["<img mat-card-sm-image>https://github.com/channelit/web/raw/master/src/assets/img/products/geotegra1.png</img>"
+              title: "Graph Data Analytics",
+              content: ["Open source big data graph analytics platform.<br><img mat-card-sm-image height='350' src='https://github.com/channelit/web/raw/master/src/assets/img/products/geotegra1.png'></img>"
               ]
             }
           ]
