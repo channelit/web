@@ -1,5 +1,5 @@
 export const Products = {
-    productTitle: "Enterprise Search, Graph Data and AI",
+    productTitle: "Our Products for Enterprise Search, Graph Data and AI",
     productItems: [
       {
         rows: "1",
@@ -10,7 +10,7 @@ export const Products = {
           body: [
             {
               title: "Coming Soon!",
-              content: ["<strong>Stay Tuned!</strong>"
+              content: ["<img mat-card-sm-image>https://github.com/channelit/web/raw/master/src/assets/img/products/geotegra1.png</img>"
               ]
             }
           ]
