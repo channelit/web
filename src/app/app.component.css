@@ -1,4 +1,6 @@
-
+.menu-lg{
+  font-size: 17px;
+}
 .main-toolbar-fill{
   flex: 1 1 auto;
 }

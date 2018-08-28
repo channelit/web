@@ -8,11 +8,11 @@
   </span>
   <span class="main-toolbar-fill"></span>
   <div fxShow fxHide.lt-lg>
-    <span *ngFor="let item of menuItems; let mindex = index">
-      <a mat-button *ngIf="!item.items" [routerLink]="item.url" fragment="start">
+    <span *ngFor="let item of menuItems; let mindex = index" class="menu-lg">
+      <a mat-button *ngIf="!item.items" [routerLink]="item.url" fragment="start" class="menu-lg">
         {{item.title}}
       </a>
-      <a mat-button *ngIf="item.items" [routerLink]="item.url" fragment="start" [matMenuTriggerFor]="innerMenu">
+      <a mat-button *ngIf="item.items" [routerLink]="item.url" fragment="start" [matMenuTriggerFor]="innerMenu" class="menu-lg">
         {{item.title}}
       </a>
       <mat-menu #innerMenu="matMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
