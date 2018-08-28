@@ -30,4 +30,5 @@ export class ProductsComponent implements OnInit {
           Products
         ];
     }
+  }
 }
