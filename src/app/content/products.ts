@@ -1,5 +1,5 @@
 export const Products = {
-    productTitle: "Our Products for Enterprise Search, Graph Data and AI",
+    productTitle: "Our Products for Enterprise Search, Graph Data, AI",
     productItems: [
       {
         rows: "1",
@@ -10,7 +10,7 @@ export const Products = {
           body: [
             {
               title: "Graph Data Analytics",
-              content: ["Open source big data graph analytics platform.<br><img mat-card-sm-image height='350' src='https://github.com/channelit/web/raw/master/src/assets/img/products/geotegra1.png'></img>"
+              content: ["Open source big data graph analytics platform.<br><img mat-card-sm-image height='Auto' width='70%' src='https://github.com/channelit/web/raw/master/src/assets/img/products/geotegra1.png'></img>"
               ]
             }
           ]
