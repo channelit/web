@@ -2,6 +2,7 @@ import {Component, HostListener, OnChanges, OnInit, SimpleChanges} from '@angula
 import {trigger, state, transition, animate, keyframes, style} from '@angular/animations';
 
 import {MenuItems} from "./content/menu";
+import {RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -34,7 +35,10 @@ export class AppComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
   }
   ngOnInit(): void {
+  }
 
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRoute && outlet.activatedRouteData['animation'];
   }
   animateToolbar() {
     this.dir = (this.posLast > window.pageYOffset ? 'up': 'down');
