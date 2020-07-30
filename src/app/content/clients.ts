@@ -40,6 +40,10 @@ export const Clients = [
     'logo': '/assets/img/clients/nihnci.png'
   },
   {
+    'name': 'FDA',
+    'logo': '/assets/img/clients/fda.png'
+  },
+  {
     'name': 'FannieMae',
     'logo': '/assets/img/clients/fanniemae.png'
   },
