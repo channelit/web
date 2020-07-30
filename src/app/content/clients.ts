@@ -4,6 +4,10 @@ export const Clients = [
     'logo': '/assets/img/clients/uspto.png'
   },
   {
+    'name': 'GDIT',
+    'logo': '/assets/img/clients/gdit.png'
+  },
+  {
     'name': 'PwC',
     'logo': '/assets/img/clients/pwc.png'
   },
