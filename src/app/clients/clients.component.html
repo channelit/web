@@ -2,8 +2,12 @@
   <span>Our Direct and Indirect Clients</span>
 </mat-toolbar>
 
-<div fxLayout="row wrap" fxLayout.lt-md="column wrap" fxLayoutAlign="center center" class="mat-typography">
-    <mat-card *ngFor="let client of clients" class="client-logo">
+<mat-grid-list #clintsgrid [cols]="cols" class="mat-typography">
+  <mat-grid-tile *ngFor="let client of clients">
+    <mat-card class="client-logo" style="width: 225px; height: 225px">
+      <mat-card-content>
         <img mat-card-xl-image src="{{client.logo}}">
+      </mat-card-content>
     </mat-card>
-</div>
+  </mat-grid-tile>
+</mat-grid-list>

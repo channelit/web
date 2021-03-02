@@ -1,6 +1,6 @@
 <div *ngIf="productsContents.length > 0">
   <div class="mat-typography" *ngFor="let productsContent of productsContents">
-    <div fxLayout="column" fxLayoutGap="10px" fxFlex>
+    <div layout="row" layout-sm="column">
       <div class="text-primary-color products-main-title"><h1>{{productsContent.productTitle}}</h1></div>
       <div  *ngFor="let product of productsContent.productItems">
         <app-product [content]="product.content"></app-product>
