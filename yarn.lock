@@ -135,10 +135,10 @@
   dependencies:
     "tslib" "^2.0.0"
 
-"@angular/cdk@^11.1.2":
-  "integrity" "sha512-RnKvMWAIcWbWoUdBfAoOs4pQl6t5O+1OuPlBNK5aL2FYqoLv5U0fP88Rf7OhjPlD0ASsPGLG45t+dA5sUVZ46Q=="
-  "resolved" "https://registry.npmjs.org/@angular/cdk/-/cdk-11.1.2.tgz"
-  "version" "11.1.2"
+"@angular/cdk@^11.2.2":
+  "integrity" "sha512-p3lRDPlnOuJtLWEd020QOyn0ERyc1LF7OLi90hTdzMMxe9fT3v6sQJVRs8jIY3NTmpIm/pNDGi77+1/vKerLPQ=="
+  "resolved" "https://registry.npmjs.org/@angular/cdk/-/cdk-11.2.2.tgz"
+  "version" "11.2.2"
   dependencies:
     "tslib" "^2.0.0"
   optionalDependencies:
@@ -172,7 +172,7 @@
     "universal-analytics" "0.4.23"
     "uuid" "8.3.2"
 
-"@angular/common@^11.1.2":
+"@angular/common@^11.0.0 || ^12.0.0-0", "@angular/common@^11.1.2":
   "integrity" "sha512-/+tMeFikT55VgOnx30y6M/WTuSwUarehpKhJ9F61hLZBTzWAIWuaD5DODZVnZ7b15pwgEO8UWnfr4778HTQlTw=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-11.1.2.tgz"
   "version" "11.1.2"
@@ -212,7 +212,7 @@
   "resolved" "https://registry.npmjs.org/@angular/compiler/-/compiler-9.0.0.tgz"
   "version" "9.0.0"
 
-"@angular/core@^11.1.2":
+"@angular/core@^11.0.0 || ^12.0.0-0", "@angular/core@^11.1.2":
   "integrity" "sha512-5urIQTcRZ2hd9Q2JE0KQocjlIvuRdlrSGzxjf9OZbOuapXDNF0Sb3uEcVnt980NS7vw0Am5thVP9gDspS45c7Q=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-11.1.2.tgz"
   "version" "11.1.2"
