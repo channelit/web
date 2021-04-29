@@ -28,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -46,20 +47,21 @@ import { ProductComponent } from './products/product/product.component';
     ProductsComponent,
     ProductComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatMenuModule,
-    MatListModule,
-    MatGridListModule,
-    MatToolbarModule,
-    MatChipsModule,
-    MatButtonModule,
-    MatCardModule,
-    RouterModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatMenuModule,
+        MatListModule,
+        MatGridListModule,
+        MatToolbarModule,
+        MatChipsModule,
+        MatButtonModule,
+        MatCardModule,
+        RouterModule,
+        AppRoutingModule,
+        FlexLayoutModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

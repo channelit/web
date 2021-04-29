@@ -18,7 +18,7 @@
         <p>Women Owned Small Business</p>
       </div>
       <mat-chip-list fxHide fxShow.lt-lg>
-        <mat-chip *ngFor="let item of menuItems | filter:'important'" routerLink="{{item.url}}" fragment="start">
+        <mat-chip *ngFor="let item of menuItems | filter:'important'" routerLink="{{item.url}}" fragment="start" fxHide fxShow.lt-lg>
           {{item.title}}
         </mat-chip>
       </mat-chip-list>
