@@ -1,9 +1,11 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {SearchServices} from "../content/services.search";
-import {CloudServices} from "../content/services.cloud";
-import {AnalyticalServices} from "../content/services.analytics";
-import {StaffingServices} from "../content/services.staff"
-import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
+import {ServicesCyber} from "../content/services.cybersecurity";
+import {ServicesCloud} from "../content/services.cloud";
+import {ServicesAiml} from "../content/services.aiml";
+import {ServicesStaffing} from "../content/services.staffing";
+import {ServicesBi} from "../content/services.bi"
+import {ActivatedRoute, Router} from "@angular/router";
+import {ServicesDevSecOps} from "../content/services.devsecops";
 
 @Component({
   selector: 'app-services',
@@ -12,6 +14,7 @@ import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 })
 export class ServicesComponent implements OnInit {
   servicesContents;
+
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.fragment.subscribe(f => {
       const element = document.querySelector("#" + f);
@@ -24,28 +27,33 @@ export class ServicesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.activatedRoute.data.subscribe(d=> this.serviceConstants(d.service));
+    this.activatedRoute.data.subscribe(d => this.serviceConstants(d.service));
   }
 
-  serviceConstants(service:string) {
+  serviceConstants(service: string) {
     switch (service) {
       case 'cloud' :
-        this.servicesContents = [CloudServices];
+        this.servicesContents = [ServicesCloud];
         break;
-      case 'analytics' :
-        this.servicesContents = [AnalyticalServices];
+      case 'aiml' :
+        this.servicesContents = [ServicesAiml];
         break;
-      case 'search' :
-        this.servicesContents = [SearchServices];
+      case 'cyber' :
+        this.servicesContents = [ServicesCyber];
         break;
       case 'staffing' :
-        this.servicesContents = [StaffingServices];
+        this.servicesContents = [ServicesStaffing];
+        break;
+      case 'bi' :
+        this.servicesContents = [ServicesBi];
+        break;
+      case 'devsecops' :
+        this.servicesContents = [ServicesDevSecOps];
         break;
       default:
         this.servicesContents = [
-          SearchServices, CloudServices, AnalyticalServices, StaffingServices
+          ServicesCloud, ServicesAiml, ServicesCyber, ServicesStaffing, ServicesBi, ServicesDevSecOps
         ];
     }
   }
-
 }

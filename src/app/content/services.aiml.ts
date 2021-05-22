@@ -1,4 +1,4 @@
-export const AnalyticalServices = {
+export const ServicesAiml = {
   serviceTitle: "Cognitive Systems",
   serviceItems: [
     {

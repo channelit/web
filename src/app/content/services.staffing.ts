@@ -1,4 +1,4 @@
-export const StaffingServices = {
+export const ServicesStaffing = {
   serviceTitle: "Staffing",
   serviceItems: [
     {

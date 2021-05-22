@@ -1,4 +1,4 @@
-export const CloudServices = {
+export const ServicesCloud = {
   serviceTitle: "Bigdata Solutions & Cloud Migrations",
   serviceItems:
     [

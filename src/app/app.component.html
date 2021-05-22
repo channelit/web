@@ -16,13 +16,29 @@
          class="menu-lg">
         {{item.title}}
       </a>
-      <mat-menu #innerMenu="matMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
-        <button mat-menu-item *ngFor="let menuItem of item.items" [routerLink]="item.url"
-                fragment="{{menuItem.title | idMaker}}">
-          {{menuItem.title}}
-        </button>
+
+
+      <mat-menu #innerInnerMenu="matMenu" yPosition="below" xPosition="after" class="sub-menu">
+          <ng-template matMenuContent let-items="items">
+            <span *ngFor="let innerMenuItem of items">
+              <button mat-menu-item [routerLink]="innerMenuItem.url" fragment="{{innerMenuItem.title | idMaker}}">{{innerMenuItem.title}}</button>
+            </span>
+          </ng-template>
+      </mat-menu>
+
+      <mat-menu #innerMenu="matMenu" yPosition="below" xPosition="after" [overlapTrigger]="false" class="sub-menu">
+        <span *ngFor="let menuItem of item.items">
+          <button *ngIf="!menuItem.items" mat-menu-item [routerLink]="item.url"
+                  fragment="{{menuItem.title | idMaker}}" class="sub-menu">
+            {{menuItem.title}}
+          </button>
+          <button *ngIf="menuItem.items" mat-menu-item [routerLink]="item.url" fragment="{{menuItem.title | idMaker}}" [matMenuTriggerFor]="innerInnerMenu" [matMenuTriggerData]="menuItem" class="menu-lg">
+            {{menuItem.title}}
+          </button>
+        </span>
       </mat-menu>
     </span>
+
   </div>
   <div fxHide fxShow.lt-lg>
     <span class="sm-menu-button" [matMenuTriggerFor]="smmenu"><i class="fa fa-bars fa-lg fa-border"></i></span>

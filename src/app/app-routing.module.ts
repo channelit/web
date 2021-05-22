@@ -5,6 +5,8 @@ import {ClientsComponent} from './clients/clients.component';
 import {ServicesComponent} from "./services/services.component";
 import {HomeComponent} from './home/home.component';
 import {ProductsComponent} from "./products/products.component";
+import {CareersComponent} from "./careers/careers.component";
+import {CertsComponent} from "./certs/certs.component";
 
 const routes: Routes = [
   {
@@ -12,19 +14,37 @@ const routes: Routes = [
     component: ClientsComponent
   },
   {
-    path: 'search',
+    path: 'aiml',
     component: ServicesComponent,
-    data: {service: 'search'},
-  },
-  {
-    path: 'analytics',
-    component: ServicesComponent,
-    data: {service: 'analytics'}
+    data: {service: 'aiml'},
   },
   {
     path: 'cloud',
     component: ServicesComponent,
     data: {service: 'cloud'}
+  },
+  {
+    path: 'cyber',
+    component: ServicesComponent,
+    data: {service: 'cyber'}
+
+  },
+  {
+    path: 'devsecops',
+    component: ServicesComponent,
+    data: {service: 'devsecops'}
+
+  },
+  {
+    path: 'bi',
+    component: ServicesComponent,
+    data: {service: 'bi'}
+
+  },
+  {
+    path: 'staffing',
+    component: ServicesComponent,
+    data: {service: 'staffing'}
 
   },
   {
@@ -34,13 +54,16 @@ const routes: Routes = [
 
   },
   {
-    path: 'staffing',
-    component: ServicesComponent,
-    data: {service: 'staffing'}
-  },
-  {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'certs',
+    component: CertsComponent
+  },
+  {
+    path: 'careers',
+    component: CareersComponent
   },
   {
     path: 'home',
