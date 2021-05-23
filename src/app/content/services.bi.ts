@@ -1,12 +1,12 @@
 export const ServicesBi = {
-  serviceTitle: "Enterprise Search",
+  serviceTitle: "Business Intelligence",
   serviceItems:
     [
       {
         rows: "2",
         cols: "3",
         content: {
-          title: "Design and Implementation",
+          title: "Data Analytics",
           subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
           body: [
             {
@@ -37,7 +37,7 @@ export const ServicesBi = {
         rows: "2",
         cols: "3",
         content: {
-          title: "Search Engine Expertise",
+          title: "Data and Ontology",
           subtitle: "Over many years of <b>Enterprise Search Consulting</b>, we have gained experience in various leading search engines, both commercial and open-source",
           body: [
             {
@@ -65,67 +65,6 @@ export const ServicesBi = {
               title: "Capacity Planing",
               content: [
                 "We have decades of experience designing Enterprise Search platforms to achieve desired <strong>performance, scalability and reliability</strong> in cloud environments for <strong>SolrCloud</strong> and <strong>Elastic</strong>."
-              ]
-            }
-          ]
-        }
-      },
-      {
-        rows: "2",
-        cols: "3",
-        content: {
-          title: "Relevancy Tuning",
-          subtitle: "We provide services engagement for improving the relevancy of search results within an existing Lucene based search/indexing implementations of Solr and ElasticSearch.",
-          body: [
-            {
-              title: "Bayesian Classification ",
-              content: [
-                "The classification in Search Engine can be implemented at index time and/or query time",
-                "We can develop or customize existing search setup for tagging the data being indexed which can drastically improve improve relevancy at search time.",
-                "Our approach for classification provides <strong>dynamic optimization</strong> of Bayesian estimators based on virtual feedback from logs and user behavior analysis."
-              ]
-            },
-            {
-              title: "Proximity Boosting",
-              content: [
-                "Boosting of search results by fields or query terms is one of the quickest way to improve relevancy. By developing external algorithm to calculate proximity score of search terms the boost parameters can be dynamically adjusted.",
-                "Channel IT Services, in addition to adjusting boosting parameters, can help develop <strong>proximity calculation modules</strong> around the core search engine in use."
-              ]
-            },
-            {
-              title: "Word2Vec",
-              content: [
-                "Google's <strong>Word2Vec</strong> algorithm is result of years of research and provides amazing results for relevancy",
-                "Various implementations are available in Java, JavaScript, Go and various other languages.",
-                "With our help it gets really easy to integrate <strong>'Google Like' Type Ahead</strong> and Suggestions to yoru Enterprise Search implementation"
-              ]
-            },
-            {
-              title: "BM25 & TF/IDF",
-              content: [
-                "Our unique feedback mechanism allows to <strong>tune ranking coefficient in BM25 </strong>(default in Lucene) or <strong> develop custom decay function for TF/IDF </strong> to achieve relevancy goals of your enterprise."
-              ]
-            }
-          ]
-        }
-      },
-      {
-        rows: "2",
-        cols: "3",
-        content: {
-          title: "Search Engine Optimizations",
-          subtitle: "We have successfully developed Big Data Enterprise Search systems for Federal and Commercial customers.",
-          body: [
-            {
-              title: "Indexing Performance",
-              content: [
-                "Indexing performance can play a big role for big data search and analytics system. We have iplemented innovative system architecture using caching layer and batch processing that helped our customers reduce full index time multiple times faster and made DR and development made easier."
-              ]
-            },
-            {
-              title: "Query Response Time",
-              content: [
-                "No matter how large is index size and query load is, thanks to the open source distributed computing tols and technologies like Mesos, ZooKeeper, Hadoop, we can help achive desired SLAs for our clients."
               ]
             }
           ]

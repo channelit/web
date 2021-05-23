@@ -17,9 +17,9 @@
         {{item.title}}
       </a>
       <mat-menu #innerInnerMenu="matMenu" yPosition="below" xPosition="after" class="sub-menu">
-          <ng-template matMenuContent let-items="items">
+          <ng-template matMenuContent let-items="items" let-url="url">
             <span *ngFor="let innerMenuItem of items">
-              <button mat-menu-item [routerLink]="innerMenuItem.url" fragment="{{innerMenuItem.title | idMaker}}">{{innerMenuItem.title}}</button>
+              <button mat-menu-item [routerLink]="url" fragment="{{innerMenuItem.title | idMaker}}">{{innerMenuItem.title}}</button>
             </span>
           </ng-template>
       </mat-menu>

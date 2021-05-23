@@ -13,13 +13,13 @@ export const MenuItems = [
         icon: "fa fa-cloud",
         items: [
           {
-            title: "BigData Expertise"
-          },
-          {
             title: "Cloud Migration"
           },
           {
-            title: "IoT Systems"
+            title: "Cloud Development"
+          },
+          {
+            title: "Cloud Security"
           }
         ]
       }, {
@@ -29,7 +29,13 @@ export const MenuItems = [
         icon: "fa fa-search-plus",
         items: [
           {
-            title: "Design and Implementation"
+            title: "Machine Learning"
+          },
+          {
+            title: "Cognitive Search"
+          },
+          {
+            title: "AI/ML Powered Search"
           },
           {
             title: "Search Engine Expertise"
@@ -39,15 +45,6 @@ export const MenuItems = [
           },
           {
             title: "Search Engine Optimizations"
-          },
-          {
-            title: "Machine Learning"
-          },
-          {
-            title: "Cognitive Search"
-          },
-          {
-            title: "Natural Language Processing"
           }
         ]
       }, {
@@ -67,35 +64,32 @@ export const MenuItems = [
           }
         ]
       }, {
-        title: "BlockChain",
+        title: "Blockchain",
         url: "blockchain",
         important: true,
         icon: "fa fa-area-chart",
         items: [
           {
-            title: "Machine Learning"
+            title: "Blockchain Development"
           },
           {
-            title: "Cognitive Search"
-          },
-          {
-            title: "Natural Language Processing"
+            title: "Blockchain Consulting"
           }
         ]
       }, {
-        title: "CyberSecurity",
+        title: "Cyber Security",
         url: "cyber",
         important: true,
         icon: "fa fa-area-chart",
         items: [
           {
-            title: "Machine Learning"
+            title: "Security Audits"
           },
           {
-            title: "Cognitive Search"
+            title: "Penetration Testing"
           },
           {
-            title: "Natural Language Processing"
+            title: "Network Security"
           }
         ]
       }, {

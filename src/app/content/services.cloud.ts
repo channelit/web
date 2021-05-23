@@ -1,16 +1,16 @@
 export const ServicesCloud = {
-  serviceTitle: "Bigdata Solutions & Cloud Migrations",
+  serviceTitle: "Cloud",
   serviceItems:
     [
       {
         rows: "2",
         cols: "3",
         content: {
-          title: "BigData Expertise",
+          title: "Cloud Migration",
           subtitle: "We have successfully developed <strong>Big Data Enterprise Search</strong> systems for Federal and Commercial customers.",
           body: [
             {
-              title: "NoSQL Databases",
+              title: "Cloud Migrations",
               content: [
                 "MongoDB",
                 "Cassandra",
@@ -65,7 +65,7 @@ export const ServicesCloud = {
         rows: "2",
         cols: "3",
         content: {
-          title: "Cloud Migration",
+          title: "Cloud Development",
           subtitle: "We have helped our customers to build transition systems from MainFrame to Cloud including developing system to synchronize data while both systems are live during transition period.",
           body: [
             {
@@ -87,7 +87,7 @@ export const ServicesCloud = {
         rows: "2",
         cols: "3",
         content: {
-          title: "IoT Systems",
+          title: "Cloud Security",
           subtitle: "We have helped our customers to develop <strong>IoT platform</strong> on cloud services.",
           body: [
             {
