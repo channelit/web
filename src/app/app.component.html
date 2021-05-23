@@ -16,8 +16,6 @@
          class="menu-lg">
         {{item.title}}
       </a>
-
-
       <mat-menu #innerInnerMenu="matMenu" yPosition="below" xPosition="after" class="sub-menu">
           <ng-template matMenuContent let-items="items">
             <span *ngFor="let innerMenuItem of items">
@@ -32,7 +30,7 @@
                   fragment="{{menuItem.title | idMaker}}" class="sub-menu">
             {{menuItem.title}}
           </button>
-          <button *ngIf="menuItem.items" mat-menu-item [routerLink]="item.url" fragment="{{menuItem.title | idMaker}}" [matMenuTriggerFor]="innerInnerMenu" [matMenuTriggerData]="menuItem" class="menu-lg">
+          <button *ngIf="menuItem.items" mat-menu-item [routerLink]="menuItem.title | idMaker" fragment="start" [matMenuTriggerFor]="innerInnerMenu" [matMenuTriggerData]="menuItem" class="menu-lg">
             {{menuItem.title}}
           </button>
         </span>

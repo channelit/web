@@ -121,13 +121,13 @@ export const MenuItems = [
         icon: "fa fa-area-chart",
         items: [
           {
-            title: "Machine Learning"
+            title: "IT Staffing"
           },
           {
-            title: "Cognitive Search"
+            title: "Diversity Recruiting"
           },
           {
-            title: "Natural Language Processing"
+            title: "Proposal Recruiting"
           }
         ]
       }

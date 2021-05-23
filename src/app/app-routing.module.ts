@@ -48,6 +48,12 @@ const routes: Routes = [
 
   },
   {
+    path: 'services',
+    component: ServicesComponent,
+    data: {service: 'services'}
+
+  },
+  {
     path: 'products',
     component: ProductsComponent,
     data: {product: 'search'}
