@@ -4,13 +4,13 @@
     <mat-card-title><h2>{{content.title}}</h2></mat-card-title>
     <mat-card-subtitle [innerHTML]="content.subtitle | htmlTag:'h3'"></mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
+  <mat-card-content fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayoutGap="20px grid">
     <section *ngFor="let body of content.body">
-      <mat-card>
+      <mat-card fxFlex>
         <mat-card-header>
           <mat-card-title [innerHTML]="body.title | htmlTag:'h2,strong'"></mat-card-title>
         </mat-card-header>
-        <mat-card-content>
+        <mat-card-content style="width: 300px">
           <ul>
             <li *ngFor="let contentItem of body.content" [innerHTML]="contentItem | htmlTag:'h3'"></li>
           </ul>
