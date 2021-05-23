@@ -6,11 +6,11 @@
   </mat-card-header>
   <mat-card-content fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayoutGap="20px grid">
     <section *ngFor="let body of content.body">
-      <mat-card fxFlex>
+      <mat-card fxFlex="500px">
         <mat-card-header>
           <mat-card-title [innerHTML]="body.title | htmlTag:'h2,strong'"></mat-card-title>
         </mat-card-header>
-        <mat-card-content style="width: 300px">
+        <mat-card-content>
           <ul>
             <li *ngFor="let contentItem of body.content" [innerHTML]="contentItem | htmlTag:'h3'"></li>
           </ul>
