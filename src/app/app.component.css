@@ -1,24 +1,30 @@
-.menu-lg{
+.menu-lg {
   font-size: 17px;
 }
-.main-toolbar-fill{
+
+.main-toolbar-fill {
   flex: 1 1 auto;
 }
+
 .social-icon {
   padding-right: 14px;
 }
+
 .sm-menu-icon {
-  padding-right:8px;
+  padding-right: 8px;
 }
+
 .sm-menu-button {
   padding-top: 10px;
   padding-right: 20px;
 }
+
 @media only screen and (max-width: 768px) {
   .sm-menu-button {
     padding-right: 0;
   }
 }
+
 .toolbar-logo {
   height: 40px;
   padding: 4px;
@@ -39,26 +45,39 @@
   line-height: 15px;
   color: white;
 }
+
 .company-name-holder > span {
   display: block;
 }
+
 .trademark {
   padding-top: 8px;
   font-family: "Arial";
   font-size: 15px;
-  font-weight:normal;
+  font-weight: normal;
   color: #eeeeee;
 }
 
 .main-toolbar {
-  height:  60px;
+  height: 60px;
   background: #347DCE;
   opacity: 0.9;
   position: fixed;
   z-index: 2;
 }
 
-.sub-menu {
-  background: #347DCE;
+::ng-deep .mat-menu-content {
+  background-color: #347DCE;
   color: white;
+}
+
+::ng-deep .mat-menu-item {
+  color: white;
+  font-size: 17px;
+}
+
+::ng-deep .mat-menu-item-highlighted {
+  background-color: #0E265AFF;
+  color: white;
+  font-size: 17px;
 }

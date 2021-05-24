@@ -16,18 +16,18 @@
          class="menu-lg">
         {{item.title}}
       </a>
-      <mat-menu #innerInnerMenu="matMenu" yPosition="below" xPosition="after" class="sub-menu">
-          <ng-template matMenuContent let-items="items" let-url="url">
+      <mat-menu #innerInnerMenu="matMenu" yPosition="below" xPosition="after">
+          <ng-template matMenuContent let-items="items">
             <span *ngFor="let innerMenuItem of items">
-              <button mat-menu-item [routerLink]="url" fragment="{{innerMenuItem.title | idMaker}}">{{innerMenuItem.title}}</button>
+              <button mat-menu-item [routerLink]="innerMenuItem.url" fragment="{{innerMenuItem.title | idMaker}}">{{innerMenuItem.title}}</button>
             </span>
           </ng-template>
       </mat-menu>
 
-      <mat-menu #innerMenu="matMenu" yPosition="below" xPosition="after" [overlapTrigger]="false" class="sub-menu">
+      <mat-menu #innerMenu="matMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
         <span *ngFor="let menuItem of item.items">
           <button *ngIf="!menuItem.items" mat-menu-item [routerLink]="item.url"
-                  fragment="{{menuItem.title | idMaker}}" class="sub-menu">
+                  fragment="{{menuItem.title | idMaker}}">
             {{menuItem.title}}
           </button>
           <button *ngIf="menuItem.items" mat-menu-item [routerLink]="menuItem.title | idMaker" fragment="start" [matMenuTriggerFor]="innerInnerMenu" [matMenuTriggerData]="menuItem" class="menu-lg">
