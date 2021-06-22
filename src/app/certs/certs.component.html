@@ -1,1 +1,15 @@
-<p>certs works!</p>
+<mat-toolbar color="none">
+  <span>Certifications and Affiliations</span>
+</mat-toolbar>
+
+<div *ngIf="certs.length > 0">
+  <div fxLayout="row" fxLayout.lt-xl="column" fxLayoutGap="10px" fxLayoutAlign="space-around center" fxFlex>
+    <div class="mat-typography" *ngFor="let cert of certs">
+      <mat-card class="cert-logo">
+        <mat-card-content>
+          <img mat-card-image src="{{cert.logo}}">
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

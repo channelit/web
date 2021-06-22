@@ -154,7 +154,7 @@ export const MenuItems = [
     icon: "fa fa-id-card-o"
   },
   {
-    title: "Certifications",
+    title: "Contracts",
     url: "certs",
     icon: "fa fa-id-card-o"
   },

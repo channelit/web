@@ -1,0 +1,8 @@
+.cert-logo {
+  filter: grayscale(10%);
+  margin: 45px;
+  width: 400px;
+}
+.cert-card {
+  margin: 20px;
+}
