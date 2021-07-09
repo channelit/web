@@ -1,11 +1,12 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {ServicesCyber} from "../content/services.cybersecurity";
+import {ServicesCyberSecurity} from "../content/services.cybersecurity";
 import {ServicesCloud} from "../content/services.cloud";
 import {ServicesAiml} from "../content/services.aiml";
 import {ServicesStaffing} from "../content/services.staffing";
 import {ServicesBi} from "../content/services.bi"
 import {ActivatedRoute, Router} from "@angular/router";
 import {ServicesDevSecOps} from "../content/services.devsecops";
+import {ServicesBlockchain} from "../content/services.blockchain";
 
 @Component({
   selector: 'app-services',
@@ -38,8 +39,11 @@ export class ServicesComponent implements OnInit {
       case 'aiml' :
         this.servicesContents = [ServicesAiml];
         break;
-      case 'cyber' :
-        this.servicesContents = [ServicesCyber];
+      case 'cybersecurity' :
+        this.servicesContents = [ServicesCyberSecurity];
+        break;
+      case 'blockchain' :
+        this.servicesContents = [ServicesBlockchain];
         break;
       case 'staffing' :
         this.servicesContents = [ServicesStaffing];
@@ -52,7 +56,7 @@ export class ServicesComponent implements OnInit {
         break;
       default:
         this.servicesContents = [
-          ServicesCloud, ServicesAiml, ServicesCyber, ServicesStaffing, ServicesBi, ServicesDevSecOps
+          ServicesCloud, ServicesAiml, ServicesCyberSecurity, ServicesBlockchain, ServicesStaffing, ServicesBi, ServicesDevSecOps
         ];
     }
   }

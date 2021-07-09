@@ -38,15 +38,6 @@ export const ServicesStaffing = {
         subtitle: "",
         body: []
       }
-    },
-    {
-      rows: "2",
-      cols: "3",
-      content: {
-        title: "Proposal Recruiting",
-        subtitle: "",
-        body: []
-      }
     }
   ]
 };

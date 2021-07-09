@@ -10,7 +10,7 @@ export const ServicesCloud = {
           subtitle: "We have successfully developed <strong>Big Data Enterprise Search</strong> systems for Federal and Commercial customers.",
           body: [
             {
-              title: "Cloud Migrations",
+              title: "Discovery and Architecture",
               content: [
                 "MongoDB",
                 "Cassandra",
@@ -18,44 +18,10 @@ export const ServicesCloud = {
               ]
             },
             {
-              title: "Hadoop Ecosystem",
+              title: "Data Migration",
               content: [
                 "Hadoop",
                 "Spark",
-              ]
-            },
-            {
-              title: "Microservice Frameworks",
-              content: [
-                  "Spring Cloud",
-                  "Netflix OSS",
-                  "Lagom (LightBend)"
-              ]
-            },
-            {
-              title: "Search",
-              content: [
-                "Solr",
-                "ElasticSearch"
-              ]
-            },
-            {
-              title: "Realtime Data Streams",
-              content: [
-                "Apache <strong>Flink</strong>",
-                "Apache <strong>Kafka</strong>",
-                "<strong>Spark Streaming</strong>",
-                "<strong>RabbitMQ</strong>",
-                "Apache Beam"
-
-              ]
-            },
-            {
-              title: "Graph Computing",
-              content: [
-                "<strong>Neo4J</strong>",
-                "<strong>Spark GraphFrames</strong>",
-                "JanusGraph"
               ]
             }
           ]
@@ -69,34 +35,15 @@ export const ServicesCloud = {
           subtitle: "We have helped our customers to build transition systems from MainFrame to Cloud including developing system to synchronize data while both systems are live during transition period.",
           body: [
             {
-              title: "Google Cloud Platform",
+              title: "Databases",
               content: []
             },
             {
-              title: "Amazone Web Services (AWS)",
+              title: "Serverless",
               content: []
             },
             {
-              title: "Microsoft Azure",
-              content: []
-            }
-          ]
-        }
-      },
-      {
-        rows: "2",
-        cols: "3",
-        content: {
-          title: "Cloud Security",
-          subtitle: "We have helped our customers to develop <strong>IoT platform</strong> on cloud services.",
-          body: [
-            {
-              title: "AWS IoT",
-              content: [
-                ]
-            },
-            {
-              title: "Google IoT",
+              title: "Streaming Data",
               content: []
             }
           ]

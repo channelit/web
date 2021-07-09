@@ -1,4 +1,4 @@
-export const SearchServices = {
+export const ServicesBlockchain = {
   serviceTitle: "Blockchain",
   serviceItems:
     [
@@ -21,13 +21,6 @@ export const SearchServices = {
               content: [
                 "Our team has many years of experience building custom connectors that can access your data from all your sources including databases, intranets, network drives, SharePoint, Documentum, Google Drive, CRM systems and the cloud.",
                 "With the connector architecture we have built, our customers enjoy full control over source code, easy maintenance and version upgrades as they evolve/upgrade their content management platforms."
-              ]
-            },
-            {
-              title: "Data Ingestion",
-              content: [
-                "We have proven proficiency in optimizing Data Ingesting techniques in various Enterprise Search Platforms like <strong>Solr, Elastic, IBM Watson and Google Enterprise Search.</strong>",
-                "Our team is proficient in myriad of languages and tools which they use to provide Custom data ingestion process and gives full control to the customer."
               ]
             }
           ]
@@ -52,19 +45,6 @@ export const SearchServices = {
               content: [
                 "We provide full support for Elastic <strong>configuration</strong> and <strong>deployment</strong>.",
                 "Our trained team members can help solve tuning and relevency problems as well as scalability, automated deployment and containerization."
-              ]
-            },
-            {
-              title: "MongodB, Cassandra, BigTable, Neo4J",
-              content: [
-                "Our <strong>custom data ingesting</strong> and search pipelines include connectors for various RDBMS that create cache in NoSQL stores like MongoDB and Cassandra.",
-                "With powerful aggregation framework available in MongoDB and various plugins for Cassandra, our customers can get great flexibility for <strong>faster indexing</strong> and <strong>advanced analytics</strong>."
-              ]
-            },
-            {
-              title: "Capacity Planing",
-              content: [
-                "We have decades of experience designing Enterprise Search platforms to achieve desired <strong>performance, scalability and reliability</strong> in cloud environments for <strong>SolrCloud</strong> and <strong>Elastic</strong>."
               ]
             }
           ]

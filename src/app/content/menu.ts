@@ -17,9 +17,6 @@ export const MenuItems = [
           },
           {
             title: "Cloud Development"
-          },
-          {
-            title: "Cloud Security"
           }
         ]
       }, {
@@ -32,19 +29,7 @@ export const MenuItems = [
             title: "Machine Learning"
           },
           {
-            title: "Cognitive Search"
-          },
-          {
             title: "AI/ML Powered Search"
-          },
-          {
-            title: "Search Engine Expertise"
-          },
-          {
-            title: "Relevancy Tuning"
-          },
-          {
-            title: "Search Engine Optimizations"
           }
         ]
       }, {
@@ -54,13 +39,10 @@ export const MenuItems = [
         icon: "fa fa-area-chart",
         items: [
           {
-            title: "Machine Learning"
+            title: "Data Analytics"
           },
           {
-            title: "Cognitive Search"
-          },
-          {
-            title: "Natural Language Processing"
+            title: "Data Warehouse"
           }
         ]
       }, {
@@ -77,7 +59,7 @@ export const MenuItems = [
           }
         ]
       }, {
-        title: "Cyber Security",
+        title: "Cybersecurity",
         url: "cyber",
         important: true,
         icon: "fa fa-area-chart",
@@ -87,9 +69,6 @@ export const MenuItems = [
           },
           {
             title: "Penetration Testing"
-          },
-          {
-            title: "Network Security"
           }
         ]
       }, {
@@ -99,13 +78,10 @@ export const MenuItems = [
         icon: "fa fa-area-chart",
         items: [
           {
-            title: "Machine Learning"
+            title: "Security Automation"
           },
           {
-            title: "Cognitive Search"
-          },
-          {
-            title: "Natural Language Processing"
+            title: "Isolation"
           }
         ]
       }, {
@@ -119,9 +95,6 @@ export const MenuItems = [
           },
           {
             title: "Diversity Recruiting"
-          },
-          {
-            title: "Proposal Recruiting"
           }
         ]
       }
@@ -163,5 +136,4 @@ export const MenuItems = [
     url: "careers",
     icon: "fa fa-id-card-o"
   }
-
 ];

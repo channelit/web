@@ -37,7 +37,7 @@ export const ServicesBi = {
         rows: "2",
         cols: "3",
         content: {
-          title: "Data and Ontology",
+          title: "Data Warehouse",
           subtitle: "Over many years of <b>Enterprise Search Consulting</b>, we have gained experience in various leading search engines, both commercial and open-source",
           body: [
             {
@@ -45,26 +45,6 @@ export const ServicesBi = {
               content: [
                 "Our team can provide full end-to-end support for successful Solr cluster deployment.",
                 "For various customers, we have experience in writing custom connectors for Solr using Java, NodeJS and .Net"
-              ]
-            },
-            {
-              title: "Elastic",
-              content: [
-                "We provide full support for Elastic <strong>configuration</strong> and <strong>deployment</strong>.",
-                "Our trained team members can help solve tuning and relevency problems as well as scalability, automated deployment and containerization."
-              ]
-            },
-            {
-              title: "MongodB, Cassandra, BigTable, Neo4J",
-              content: [
-                "Our <strong>custom data ingesting</strong> and search pipelines include connectors for various RDBMS that create cache in NoSQL stores like MongoDB and Cassandra.",
-                "With powerful aggregation framework available in MongoDB and various plugins for Cassandra, our customers can get great flexibility for <strong>faster indexing</strong> and <strong>advanced analytics</strong>."
-              ]
-            },
-            {
-              title: "Capacity Planing",
-              content: [
-                "We have decades of experience designing Enterprise Search platforms to achieve desired <strong>performance, scalability and reliability</strong> in cloud environments for <strong>SolrCloud</strong> and <strong>Elastic</strong>."
               ]
             }
           ]

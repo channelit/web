@@ -24,10 +24,14 @@ const routes: Routes = [
     data: {service: 'cloud'}
   },
   {
-    path: 'cyber',
+    path: 'cybersecurity',
     component: ServicesComponent,
-    data: {service: 'cyber'}
-
+    data: {service: 'cybersecurity'}
+  },
+  {
+    path: 'blockchain',
+    component: ServicesComponent,
+    data: {service: 'blockchain'}
   },
   {
     path: 'devsecops',
