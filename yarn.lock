@@ -128,12 +128,12 @@
   dependencies:
     "tslib" "^2.1.0"
 
-"@angular/cdk@^12.0.3", "@angular/cdk@12.0.3":
-  "integrity" "sha512-E/3eAcDTsuSAaeOajwBwjPtBMVSzZu5BgtXBX+QfC66jWJ4FdX5FUxGDZCwlF/Bbtdkvn0Jq8+UW9RlrS2Hd9Q=="
-  "resolved" "https://registry.npmjs.org/@angular/cdk/-/cdk-12.0.3.tgz"
-  "version" "12.0.3"
+"@angular/cdk@^12.1.1", "@angular/cdk@12.1.1":
+  "integrity" "sha512-MJENa8qmfLAr6t59u1+mEC2YPbCn4n3vsY6k8fKyf+ILXwwGHWNZlYblaRMBjrF/crSx1Kd5vb30RCqIcNTGsA=="
+  "resolved" "https://registry.npmjs.org/@angular/cdk/-/cdk-12.1.1.tgz"
+  "version" "12.1.1"
   dependencies:
-    "tslib" "^2.1.0"
+    "tslib" "^2.2.0"
   optionalDependencies:
     "parse5" "^5.0.0"
 
@@ -218,12 +218,12 @@
   dependencies:
     "tslib" "^2.1.0"
 
-"@angular/material@^12.0.3":
-  "integrity" "sha512-o21ogL6P38CPS0KpvbgEJ18G0YIFvG4wcyp7hTEoMv4YncpZWPQXDBi501Ys+OsUmv57R/vYa/mo+sz6uSYw2A=="
-  "resolved" "https://registry.npmjs.org/@angular/material/-/material-12.0.3.tgz"
-  "version" "12.0.3"
+"@angular/material@^12.1.1":
+  "integrity" "sha512-q2vhbVQfjr+88beqCotCVlaPRyy9y2O2asiR3+0BU9OJ1DjTo1QpBmMpck5InP7Es49t9RTk9RzzC0t18p45yA=="
+  "resolved" "https://registry.npmjs.org/@angular/material/-/material-12.1.1.tgz"
+  "version" "12.1.1"
   dependencies:
-    "tslib" "^2.1.0"
+    "tslib" "^2.2.0"
 
 "@angular/platform-browser-dynamic@^12.0.3", "@angular/platform-browser-dynamic@12.0.3":
   "integrity" "sha512-ojDDmNXeSukV4FbPNiNeR+A77RNWnXJ+ZHWBETlf5tfZgHtecyEmHlgJG3jOSDD9f4c9/F5FpuHD/LDCMp9GnA=="
@@ -8128,7 +8128,7 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.0.0", "tslib@^2.1.0", "tslib@2.2.0":
+"tslib@^2.0.0", "tslib@^2.1.0", "tslib@^2.2.0", "tslib@2.2.0":
   "integrity" "sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.2.0.tgz"
   "version" "2.2.0"
