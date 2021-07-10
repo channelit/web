@@ -12,7 +12,6 @@ export class CertsComponent implements OnInit {
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.fragment.subscribe(f => {
       const element = document.querySelector("#" + f);
-      console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>" + f);
       if (element) {
         element.scrollIntoView();
         window.scrollBy(0, -64);
