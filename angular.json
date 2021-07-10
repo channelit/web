@@ -20,13 +20,16 @@
               "src/assets",
               "src/favicon.ico",
               "src/server.js",
-              "src/app.yaml"
+              "src/app.yaml",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css",
               "node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -80,7 +83,8 @@
               "src/assets",
               "src/favicon.ico",
               "src/server.js",
-              "src/app.yaml"
+              "src/app.yaml",
+              "src/manifest.webmanifest"
             ]
           }
         },

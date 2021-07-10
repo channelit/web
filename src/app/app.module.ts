@@ -31,6 +31,8 @@ import {ProductComponent} from './products/product/product.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {CareersComponent} from './careers/careers.component';
 import { CertsComponent } from './certs/certs.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,13 @@ import { CertsComponent } from './certs/certs.component';
     MatCardModule,
     RouterModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
