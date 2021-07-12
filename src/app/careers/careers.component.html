@@ -10,12 +10,18 @@
         <mat-card-subtitle>{{job.subtitle}}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <p>
-          {{job.body}}
-        </p>
+        <ul>
+          <li><strong>Responsibilities</strong></li>
+          <div [innerHTML]="job.responsibilities"></div>
+          <li><strong>Must Have Qualifications</strong></li>
+          <div [innerHTML]="job.musthave"></div>
+          <li><strong>Desired Qualifications</strong></li>
+          <div [innerHTML]="job.desired"></div>
+        </ul>
+        <div [innerHTML]="job.body"></div>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>Apply</button>
+        <a href="mailto:recruiting@channelit.biz?subject=JobID {{job.id}}"><button mat-button>Apply</button></a>
       </mat-card-actions>
     </mat-card>
   </div>
