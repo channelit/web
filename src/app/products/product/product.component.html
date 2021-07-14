@@ -5,7 +5,7 @@
     <mat-card-subtitle [innerHTML]="content.subtitle | htmlTag:'h3'"></mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <section *ngFor="let body of content.body">
+    <section *ngFor="let body of content.body" fxLayout.lt-lg="column" fxLayoutAlign="center stretch" fxLayoutGap="10px">
       <mat-card>
         <mat-card-header>
           <mat-card-title [innerHTML]="body.title | htmlTag:'h2,strong'"></mat-card-title>
