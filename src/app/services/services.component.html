@@ -1,8 +1,8 @@
 <div *ngIf="servicesContents.length > 0">
   <div class="mat-typography" *ngFor="let servicesContent of servicesContents">
-    <div fxLayout="column wrap" fxLayoutGap="10px">
+    <div fxLayout="column" fxLayoutGap="10px">
       <div class="text-primary-color services-main-title"><h1>{{servicesContent.serviceTitle}}</h1></div>
-      <div *ngFor="let service of servicesContent.serviceItems" fxLayoutAlign="center">
+      <div *ngFor="let service of servicesContent.serviceItems">
         <app-service [content]="service.content"></app-service>
       </div>
     </div>
