@@ -4,8 +4,8 @@
     <mat-card-title><h2>{{content.title}}</h2></mat-card-title>
     <mat-card-subtitle [innerHTML]="content.subtitle | htmlTag:'h3'"></mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
-    <section *ngFor="let body of content.body" fxLayout.lt-lg="column" fxLayoutAlign="center stretch" fxLayoutGap="10px">
+  <mat-card-content fxLayout.lt-lg="column" fxLayoutAlign="center stretch" fxLayoutGap="10px">
+    <section *ngFor="let body of content.body" fxFlex="0 1 calc(50%-20px)">
       <mat-card>
         <mat-card-header>
           <mat-card-title [innerHTML]="body.title | htmlTag:'h2,strong'"></mat-card-title>
@@ -18,4 +18,5 @@
       </mat-card>
     </section>
   </mat-card-content>
+  <img src="{{content.image}}" mat-card-image class="product">
 </mat-card>

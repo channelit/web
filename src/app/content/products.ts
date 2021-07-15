@@ -6,12 +6,12 @@ export const Products = {
         cols: "1",
         content: {
           title: "CapsGraph",
+          image: "assets/img/products/geotegra1.png",
           subtitle: "Enterprise Search platform based on open source technologies, horizontally scalable, massively parallel processing system for streaming data analytics, machine learning, graph data and cognitive artificial intelligence.",
           body: [
             {
               title: "Graph Data Analytics",
-              content: ["Open source big data graph analytics platform.<br><img mat-card-sm-image height='Auto' width='70%' src='assets/img/products/geotegra1.png'></img>"
-              ]
+              content: ["Open source big data graph analytics platform"]
             }
           ]
         }
